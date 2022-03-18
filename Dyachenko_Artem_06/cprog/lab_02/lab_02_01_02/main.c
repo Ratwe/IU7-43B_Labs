@@ -11,13 +11,22 @@
 #define ZERO_DIVISION 1
 
 // Ввод массива
-void get_array(int arr[], size_t n)
+/*
+int get_array(int arr[], size_t n)
 {
     for (size_t i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
+    {
+        int data = scanf("%d", &arr[i]);
+        if (!data)
+            return EXIT_FAILURE;
+    }
+
+    return EXIT_SUCCESS;
 }
+*/
 
 // Подсчёт среднего отрицательных чисел
+/*
 double calc_mid_of_negative(int arr[], size_t n)
 {
     double sum = 0;
@@ -34,20 +43,30 @@ double calc_mid_of_negative(int arr[], size_t n)
         return ZERO_DIVISION;
     return sum / count;
 }
+*/
 
 int main(void)
 {
-    int n;
+    int n = 0;
     printf("Введите кол-во элементов массива: ");
     scanf("%d", &n);
+
+    if (n > 10)
+        return EXIT_FAILURE;
 
     #ifdef DEBUG
     printf("[DB]: n = %d\n", n);
     #endif
 
-    int arr[N] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int arr[N] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-    get_array(arr, n);
+    // Ввод массива
+    for (int i = 0; i < n; i++)
+    {
+        int data = scanf("%d", &arr[i]);
+        if (!data)
+            return EXIT_FAILURE;
+    }
 
     // Вывод массива
     #ifdef DEBUG
@@ -57,14 +76,27 @@ int main(void)
     printf("\n");
     #endif
 
-    if (calc_mid_of_negative(arr, n) > 0)
+    // Подсчёт среднего отрицательного
+    double sum = 0;
+    int count = 0;
+
+    for (int i = 0; i < n; i++)
+        if (arr[i] < 0)
+        {
+            sum += arr[i];
+            count++;
+        }
+
+    // Вывод результата
+    if (!count)
     {
         printf("Ошибка: в массиве нет отрицательных чисел!\n");
-        return EXIT_FAILURE;
+        return ZERO_DIVISION;
     }
 
-    printf("Среднее арифметическое отрицательных чисел массива: %f\n", \
-           calc_mid_of_negative(arr, n));
+    double res = sum / count;
+
+    printf("Среднее арифметическое отрицательных чисел массива: %f\n", res);
 
     return EXIT_SUCCESS;
 }
