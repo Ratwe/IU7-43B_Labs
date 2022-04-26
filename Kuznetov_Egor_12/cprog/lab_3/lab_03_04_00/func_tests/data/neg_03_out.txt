@@ -1,0 +1,1 @@
+No odd number below main matrix diagonal

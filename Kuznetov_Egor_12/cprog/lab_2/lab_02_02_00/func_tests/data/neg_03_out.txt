@@ -1,0 +1,1 @@
+All values less or equal middle value

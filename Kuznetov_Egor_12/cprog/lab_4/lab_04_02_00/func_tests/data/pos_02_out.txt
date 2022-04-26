@@ -1,0 +1,9 @@
+Result: Word 1
+word 5
+so 1
+many 2
+It 1
+hard 1
+to 1
+it 1
+is 1
