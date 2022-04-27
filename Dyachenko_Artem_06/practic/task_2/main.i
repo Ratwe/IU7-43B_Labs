@@ -729,10 +729,11 @@ extern int __overflow (FILE *, int);
 
 
 # 6 "main.c"
+int global_initialised = 1;
+int global_non_initialised;
+
 int main(void)
 {
- int global_initialised = 1;
- int global_non_initialised;ЯЯ
  int a;
  printf("Введите число: ");
  scanf("%d", &a);
