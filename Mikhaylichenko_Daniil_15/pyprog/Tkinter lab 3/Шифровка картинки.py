@@ -157,7 +157,7 @@ def choose_file(cipher_check):
         path_entry.delete(0, END)
 
         if file_path == '':
-            path_entry.insert(0, 'C:/Users/danpo/OneDrive/Изображения/Saved Pictures/Лемминги.png')
+            path_entry.insert(0, 'Лемминги.png')
         else:
             path_entry.insert(0, file_path)
 
