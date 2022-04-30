@@ -4,3 +4,9 @@
 [submodule "Dyachenko_Artem_06/se/iu7-software-engineering-labs-2022-dyachenkoartem"]
 	path = Dyachenko_Artem_06/se/iu7-software-engineering-labs-2022-dyachenkoartem
 	url = https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2022/iu7-software-engineering-labs-2022-dyachenkoartem.git
+[submodule "Dyachenko_Artem_06/cprog/-f"]
+	path = Dyachenko_Artem_06/cprog/-f
+	url = https://git.iu7.bmstu.ru/iu7-cprog/iu7-cprog-labs-2022/iu7-cprog-labs-2022-dyachenkoartem.git
+[submodule "Dyachenko_Artem_06/cprog/--force"]
+	path = Dyachenko_Artem_06/cprog/--force
+	url = https://git.iu7.bmstu.ru/iu7-cprog/iu7-cprog-labs-2022/iu7-cprog-labs-2022-dyachenkoartem.git
