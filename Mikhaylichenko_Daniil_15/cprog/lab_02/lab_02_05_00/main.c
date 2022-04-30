@@ -3,35 +3,45 @@
 
 #define WRONG_INPUT 101
 #define OUT_OF_ARRAY_RANGE 102
+#define RIGHT_INPUT 0
 #define EXPECTED_NUMBER_FROM_INPUT 1
-#define CHECK_PASS 1
-#define CHECK_FAIL 0
-#define N 10
+#define MAX_SIZE 10
 
+int enter_len(size_t *plen);
 int fill_array(int *pbeg, int *pend);
 int find_max(int *pbeg, int *pend);
 
 int main(void)
 {
-	int a[N];
+	int arr[MAX_SIZE];
 	
 	size_t len;
-	printf("Enter array's len: ");
-	if (scanf("%lu", &len) != EXPECTED_NUMBER_FROM_INPUT)
-		return WRONG_INPUT;
-	if (len > 10 || len <= 0)
-		return OUT_OF_ARRAY_RANGE;
+	int check = enter_len(&len);
+	if (check != EXIT_SUCCESS)
+		return check;
 		
-	int *pbeg = a;
+	int *pbeg = arr;
 	int *pend = pbeg + len;
 	
-	int check = fill_array(pbeg, pend);
-	if (check != 1)
+	check = fill_array(pbeg, pend);
+	if (check != EXIT_SUCCESS)
 		return WRONG_INPUT;
 	
 	printf("%d\n", find_max(pbeg, pend));
 	
 	return EXIT_SUCCESS;
+}
+
+int enter_len(size_t *plen)
+{
+	printf("Enter array's len: ");
+	if (scanf("%zu", plen) != EXPECTED_NUMBER_FROM_INPUT)
+		return WRONG_INPUT;
+		
+	if (*plen > MAX_SIZE || *plen <= 0)
+		return OUT_OF_ARRAY_RANGE;
+	
+	return RIGHT_INPUT;
 }
 
 int fill_array(int *pbeg, int *pend)
@@ -41,14 +51,14 @@ int fill_array(int *pbeg, int *pend)
 		int num;
 		printf("Enter new num: ");
 		if (scanf("%d", &num) != EXPECTED_NUMBER_FROM_INPUT)
-			return CHECK_FAIL;
+			return WRONG_INPUT;
 		
 		*pbeg = num;
 		pbeg++;
 	}
 	while (pbeg != pend);
 	
-	return CHECK_PASS;
+	return RIGHT_INPUT;
 }
 
 int find_max(int *pbeg, int *pend)
