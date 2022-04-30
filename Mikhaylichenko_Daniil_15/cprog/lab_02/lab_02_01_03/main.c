@@ -5,8 +5,22 @@
 #define WRONG_INPUT 101
 #define OUT_OF_ARRAY_RANGE 102
 #define NO_POSITIVE_NUMBERS 103
+#define RIGHT_INPUT 0
 #define EXPECTED_NUMBER_FROM_INPUT 1
-#define N 10
+#define MAX_SIZE 10
+#define EPS 1e-7
+
+int enter_len(size_t *plen)
+{
+	printf("Enter array's len: ");
+	if (scanf("%zu", plen) != EXPECTED_NUMBER_FROM_INPUT)
+		return WRONG_INPUT;
+		
+	if (*plen > MAX_SIZE || *plen <= 0)
+		return OUT_OF_ARRAY_RANGE;
+	
+	return RIGHT_INPUT;
+}
 
 int fill_array(int arr[], size_t len)
 {
@@ -16,12 +30,12 @@ int fill_array(int arr[], size_t len)
 	{
 		printf("Enter new num: ");
 		if (scanf("%d", &num) != EXPECTED_NUMBER_FROM_INPUT)
-			return 1;
+			return WRONG_INPUT;
 			
 		arr[i] = num;
 	}
 	
-	return 0;
+	return RIGHT_INPUT;
 }
 
 double calc_geometric_mean(int arr[], size_t len)
@@ -46,21 +60,19 @@ double calc_geometric_mean(int arr[], size_t len)
 
 int main(void)
 {
-	int arr[N];
+	int arr[MAX_SIZE];
 	
 	size_t len;
-	printf("Enter array's len: ");
-	if (scanf("%lu", &len) != EXPECTED_NUMBER_FROM_INPUT)
-		return WRONG_INPUT;
-	if (len > N || len <= 0)
-		return OUT_OF_ARRAY_RANGE;
+	int check = enter_len(&len);
+	if (check != EXIT_SUCCESS)
+		return check;
 		
-	char check = fill_array(arr, len);
-	if (check)
+	check = fill_array(arr, len);
+	if (check != EXIT_SUCCESS)
 		return WRONG_INPUT;
 		
 	double geom_mean = calc_geometric_mean(arr, len);
-	if (geom_mean <= 1e-7f)
+	if (geom_mean <= EPS)
 		return NO_POSITIVE_NUMBERS;
 		
 	printf("%lf\n", geom_mean);
