@@ -2,22 +2,32 @@
 
 echo "Starting preprocessing..."
 
-for file in ./*; do
+if [ ! -d "./preproc" ]; then
+    mkdir "preproc"
+    echo "Folder ./preproc created"
+fi
+
+for file in ./data/*; do
+    path=$file
+    file=$(echo "$file" | cut -c8-)
 
     if [[ "$file" =~ data[0-9]_O[0-9s]\.txt ]]; then
-        opt=$(echo "$file" | cut -c10)
+        opt=$(echo "$file" | cut -c7)
         num=$(echo "$file" | grep -o '[0-9]' | head -1)
+
+        echo "[DB]: path $path file $file"
+        echo "[DB]: opt $opt num $num"
 
         # Таблица обработанных данных
         file_data="method_""$num""_O""$opt"
-        echo -n > "$file_data"
+        echo -n > ./preproc/"$file_data"
         echo "processing ""'$file_data'""..."
 
         iterations=20
         for i in $(seq 0 $iterations); do
             # Подготовка массива
             elems=$((i * 500))
-            str=$( < "$file" grep -o "^$elems:[0-9]*\.[0-9]*")
+            str=$( < "$path" grep -o "^$elems:[0-9]*\.[0-9]*")
             vals=$(echo "$str" | cut -d ':' -f 2)
             val_args=()
 

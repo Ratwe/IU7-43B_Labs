@@ -2,7 +2,7 @@
 
 echo "Starting building..."
 
-opts="Os O0 O1 O2 O3"
+opts="O2 O1 O0 O3 Os"
 
 if [ ! -d "./apps" ]; then
     mkdir "apps"
@@ -18,7 +18,7 @@ for file in ./mains/*; do
         app=$(echo "app""$num")
 
         for opt in $opts; do
-            gcc "$path" -"$opt" -o "./apps/""$app""_$opt"".exe"
+        gcc -std=c99 "-${opt}" "$path" -o "./apps/""$app""_$opt"".exe"
         done
     fi
 done
