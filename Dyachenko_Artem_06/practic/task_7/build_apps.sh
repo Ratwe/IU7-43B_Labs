@@ -18,7 +18,7 @@ for file in ./mains/*; do
         app=$(echo "app""$num")
 
         for opt in $opts; do
-            gcc -"$opt" -o "./apps/""$app""_$opt"".exe" -c "$path"
+            gcc "$path" -"$opt" -o "./apps/""$app""_$opt"".exe"
         done
     fi
 done
