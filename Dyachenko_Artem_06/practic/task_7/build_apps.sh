@@ -18,7 +18,8 @@ for file in ./mains/*; do
         app=$(echo "app""$num")
 
         for opt in $opts; do
-        gcc -std=c99 "-${opt}" "$path" -o "./apps/""$app""_$opt"".exe"
+        gcc -std=c99 -Wall -Werror -Wpedantic -Wextra -Wfloat-equal -Wfloat-conversion -Wvla \
+        "-${opt}" "$path" -o "./apps/""$app""_$opt"".exe"
         done
     fi
 done

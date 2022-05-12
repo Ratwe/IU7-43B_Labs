@@ -6,9 +6,9 @@
 #define NMAX 10000
 #define M 1000
 
-int arr[1000000];
+long long glob_arr[NMAX];
 
-int calc_value(int *arr, int n)
+long long calc_value(int *arr, int n)
 {
     long long count = 0;
     long long temp = 1;
@@ -29,7 +29,7 @@ unsigned long long get_millitime(void)
 {
     struct timeval tv;
     gettimeofday(&tv, NULL);
-    return tv.tv_sec * 1e6 + tv.tv_usec;
+    return tv.tv_sec * 1000000ULL + tv.tv_usec * 1ULL;
 }
 
 int main(void)
@@ -47,14 +47,12 @@ int main(void)
         start_time = get_millitime();
         for (int i = 0; i < M; i++)
         {
-            arr[i] = calc_value(arr, n);
+            glob_arr[i] = calc_value(arr, n);
         }
         end_time = get_millitime();
 
         double res = end_time - start_time;
         printf("%d:%f\n", n, res / M);
     }
-
-    printf("\n");
     return EXIT_SUCCESS;
 }
