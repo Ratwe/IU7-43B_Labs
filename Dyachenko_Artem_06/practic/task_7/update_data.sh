@@ -7,6 +7,8 @@ if [ ! -d "./data" ]; then
     echo "Folder ./data created"
 fi
 
+times=$1
+
 for file in ./apps/*; do
     path=$file
     file=$(echo "$file" | cut -c8-)
@@ -17,7 +19,10 @@ for file in ./apps/*; do
         file_data="data""$num""_O""$opt"".txt"
 
         echo "updating ""'$file_data'""..."
-        "$path" >> ./data/"$file_data"
+
+        for i in $(seq 1 $times); do
+            "$path" >> ./data/"$file_data"
+        done
     fi
 done
 

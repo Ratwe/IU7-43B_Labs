@@ -12,11 +12,8 @@ for file in ./data/*; do
     file=$(echo "$file" | cut -c8-)
 
     if [[ "$file" =~ data[0-9]_O[0-9s]\.txt ]]; then
-        opt=$(echo "$file" | cut -c7)
+        opt=$(echo "$file" | cut -c8)
         num=$(echo "$file" | grep -o '[0-9]' | head -1)
-
-        echo "[DB]: path $path file $file"
-        echo "[DB]: opt $opt num $num"
 
         # Таблица обработанных данных
         file_data="method_""$num""_O""$opt"
@@ -130,7 +127,8 @@ for file in ./data/*; do
             fi
 
             # Запись данных в таблицу
-            echo "$elems:""$mid:""$median:""$min_val:""$max_val:""$down_quartile:""$up_quartile" >> "$file_data"
+            echo "$elems:""$mid:""$median:""$min_val:""$max_val:""$down_quartile:""$up_quartile"\
+                >> ./preproc/"$file_data"
 
             # # Отладка
             # echo "sorted size ${#sorted[@]}"
