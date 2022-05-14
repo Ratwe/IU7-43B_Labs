@@ -8,24 +8,46 @@
 #include <stdlib.h>
 
 #define N 10
-#define INVALID_INPUT 1
-#define EMPTY_ARRAY 2
 #define NUM_OF_ARGS 1
 
-// Ввод массива
-int input_array(int *arr, size_t n)
+#define ZERO_DIVISION 1
+#define INVALID_INPUT 2
+#define INVALID_SIZE 3
+#define EMPTY_ARRAY 4
+
+// Вывод массива
+void print_array(int *arr, size_t n)
 {
+    printf("Array:");
     for (size_t i = 0; i < n; i++)
+        printf(" %d", arr[i]);
+    printf("\n");
+}
+
+// Ввод массива
+int input_array(int *arr, size_t *n)
+{
+    printf("Введите размер массива: ");
+
+    if (scanf("%zu", n) != NUM_OF_ARGS)
+        return INVALID_INPUT;
+
+    if (*n > N || *n <= 0)
+        return INVALID_SIZE;
+
+    printf("Введите элементы массива: ");
+    for (size_t i = 0; i < *n; i++)
     {
-        int num = scanf("%d", &arr[i]);
-        if (num != NUM_OF_ARGS)
+        // Если ввели не число
+        if (scanf("%d", &arr[i]) != NUM_OF_ARGS)
             return INVALID_INPUT;
     }
+
     return EXIT_SUCCESS;
 }
 
 // Считаем результирующий массив
-int calc_new_array(int *arr, size_t n)
+int calc_new_array(int *arr, int *res, size_t n)
 {
     int count = 0;
 
@@ -43,7 +65,7 @@ int calc_new_array(int *arr, size_t n)
 
         if (first == last)
         {
-            arr[count] = temp;
+            res[count] = temp;
             count++;
         }
     }
@@ -53,35 +75,20 @@ int calc_new_array(int *arr, size_t n)
 
 int main(void)
 {
-    // Ввод размера массива
-    size_t n = 11;
-    printf("Введите размер массива: ");
-    scanf("%zu", &n);
-    if (n > 10 || n <= 0)
-        return EXIT_FAILURE;
-
     // Ввод массива
-    int arr[N] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-    if (input_array(arr, n))
-        return EXIT_FAILURE;
+    int arr[N], res[N];
+    size_t n;
 
-    // Вывод массива
-    #ifdef DEBUG
-    printf("[DB]: arr = ");
-    for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
-    #endif
+    int rc = input_array(arr, &n);
+    if (rc)
+        return rc;
 
     // Подсчёт и вывод результата
-    int count = calc_new_array(arr, n);
-    if (!count)
+    int num_of_elems = calc_new_array(arr, res, n);
+    if (!num_of_elems)
         return EMPTY_ARRAY;
 
-    printf("Результат: ");
-    for (int i = 0; i < count; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
+    print_array(res, num_of_elems);
 
     return EXIT_SUCCESS;
 }

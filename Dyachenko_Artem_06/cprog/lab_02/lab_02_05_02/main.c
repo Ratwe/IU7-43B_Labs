@@ -9,43 +9,45 @@
 #include <stdlib.h>
 
 #define N 10
-#define INPUT_OVERFLOW 100
+#define INPUT_ELEM 1
+
 #define INPUT_SUCCESS 0
 #define INPUT_FAILED 1
-#define INPUT_ELEM 1
 #define SIZE_ERROR 2
 
 int input_array(int *pa, int *pb)
 {
-    for (int *i = pa; i < pb; i++)
-        if (scanf("%d", i) != INPUT_ELEM)
+    for (int *pcur = pa; pcur < pb; pcur++)
+        if (scanf("%d", pcur) != INPUT_ELEM)
             return INPUT_FAILED;
 
     return INPUT_SUCCESS;
 }
 
-void calc_value(int *pa, int *pb)
+int calc_value(int *pa, int *pb)
 {
     int count = 0;
     int temp = 1;
 
-    for (int *i = pa; i < pb && *(i - 1) > 0; i++)
+    for (int *pcur = pa; pcur < pb && *(pcur - 1) > 0; pcur++)
     {
-        temp *= *i;
+        temp *= *pcur;
         count += temp;
     }
 
-    printf("Результат: %d\n", count);
+    return count;
 }
 
 int main(void)
 {
     // Ввод массива
     int arr[N];
-    size_t n;
+    int n;
 
     printf("Введите размерность массива: ");
-    if (scanf("%zu", &n) != INPUT_ELEM || n <= 0 || n > N)
+    if (scanf("%d", &n) != INPUT_ELEM)
+        return INPUT_FAILED;
+    if (n <= 0 || n > N)
         return SIZE_ERROR;
 
     int *pa = arr; // Pointer to the first elem
@@ -53,9 +55,10 @@ int main(void)
 
     printf("Введите массив: \n");
     if (input_array(pa, pb))
-        return EXIT_FAILURE;
+        return INPUT_FAILED;
 
-    calc_value(pa, pb);
+    int res = calc_value(pa, pb);
+    printf("Результат: %d\n", res);
 
     return EXIT_SUCCESS;
 }

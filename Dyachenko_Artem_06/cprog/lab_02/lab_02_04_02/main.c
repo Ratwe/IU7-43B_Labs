@@ -8,10 +8,11 @@
 #include <stdlib.h>
 
 #define N 10
+#define INPUT_ELEM 1
+
 #define INPUT_OVERFLOW 100
 #define EMPTY_ARRAY 1
 #define INPUT_SUCCESS 0
-#define INPUT_ELEM 1
 
 // Вывода массива
 void print_array(int *arr, size_t n)
@@ -32,9 +33,9 @@ int input_array(int *arr, size_t *n)
     while (scanf("%d", &arr[i]) == INPUT_ELEM)
     {
         i++;
-        if (i > 10)
+        if (i > N)
         {
-            *n = 10;
+            *n = N;
             return INPUT_OVERFLOW;
         }
     }
