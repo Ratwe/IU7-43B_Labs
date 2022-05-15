@@ -9,10 +9,10 @@
 #include <time.h>
 #include <sys/time.h>
 
-#define NMAX 1000
+#define NMAX 100
 #define M 100
 
-int glob_arr[NMAX];
+long long glob_arr[NMAX + 1];
 
 unsigned long long get_millitime(void)
 {
@@ -21,11 +21,22 @@ unsigned long long get_millitime(void)
     return tv.tv_sec * 1000000ULL + tv.tv_usec * 1ULL;
 }
 
-void set_random_vals(int arr[NMAX][NMAX], int n)
+void set_random_vals(int arr[NMAX][NMAX], size_t n)
 {
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
-            arr[i][j] = rand();
+    for (size_t i = 0; i < n; i++)
+        for (size_t j = 0; j < n; j++)
+            arr[i][j] = rand() % 100;
+}
+
+void print_matrix(int arr[NMAX][NMAX], size_t n, size_t m)
+{
+    for (size_t i = 0; i < n; i++)
+    {
+        for (size_t j = 0; j < m; j++)
+            printf("%d ", arr[i][j]);
+        printf("\n");
+    }
+    printf("\n");
 }
 
 int bigger(int arr[NMAX][NMAX], size_t m, size_t a, size_t b)
@@ -43,7 +54,7 @@ int bigger(int arr[NMAX][NMAX], size_t m, size_t a, size_t b)
 
 int change_lines(int arr[NMAX][NMAX], size_t m, size_t a, size_t b)
 {
-    int temp;
+    int temp = 0;
 
     for (size_t j = 0; j < m; j++)
     {
@@ -56,33 +67,34 @@ int change_lines(int arr[NMAX][NMAX], size_t m, size_t a, size_t b)
 }
 
 // сортировка строк матрицы по возрастанию произведения их элементов
-int sort_matrix(int arr[NMAX][NMAX], size_t n)
+int sort_matrix(int arr[NMAX][NMAX], size_t n, size_t m)
 {
     for (size_t i = 0; i < n - 1; i++)
         for (size_t j = 0; j < n - i - 1; j++)
-            if (bigger(arr, n, j, j + 1))
-                return change_lines(arr, n, j, j + 1);
+            if (bigger(arr, m, j, j + 1))
+                change_lines(arr, m, j, j + 1);
+
     return 0;
 }
 
 int main(void)
 {
     int arr[NMAX][NMAX];
-    long long start_time, end_time;
 
-    for (int i = 1; i <= NMAX; i++)
+    for (size_t i = 1; i <= NMAX; i++)
     {
+        long long start_time, end_time;
         set_random_vals(arr, i);
 
         start_time = get_millitime();
-        for (int j = 0; j < M; j++)
+        for (size_t j = 0; j < M; j++)
         {
-            glob_arr[i] = sort_matrix(arr, i);
+            glob_arr[i] = sort_matrix(arr, i, i);
         }
         end_time = get_millitime();
 
         double res = end_time - start_time;
-        printf("%d:%f\n", i, res / M);
+        printf("%ld:%f\n", i, res / M);
     }
 
     return EXIT_SUCCESS;
