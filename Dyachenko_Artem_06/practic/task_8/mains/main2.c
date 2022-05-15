@@ -13,7 +13,6 @@
 #define M 100
 
 long long glob_arr[NMAX + 1];
-long long sum[NMAX];
 
 unsigned long long get_millitime(void)
 {
@@ -29,12 +28,6 @@ void set_random_vals(int arr[NMAX][NMAX], size_t n)
             arr[i][j] = rand() % 100;
 }
 
-void clear_sum()
-{
-    for (size_t i = 0; i < NMAX; i++)
-        sum[i] = 0;
-}
-
 void print_matrix(int arr[NMAX][NMAX], size_t n, size_t m)
 {
     for (size_t i = 0; i < n; i++)
@@ -46,35 +39,38 @@ void print_matrix(int arr[NMAX][NMAX], size_t n, size_t m)
     printf("\n");
 }
 
-int change_lines(int arr[NMAX][NMAX], size_t m, size_t a, size_t b)
+int change_lines(int arr[NMAX][NMAX], int sum[NMAX], size_t m, size_t a, size_t b)
 {
-    int temp = 0;
+    int temp = sum[a];
+    sum[a] = sum[b];
+    sum[b] = temp;
 
     for (size_t j = 0; j < m; j++)
     {
         temp = arr[a][j];
         arr[a][j] = arr[b][j];
         arr[b][j] = temp;
-
-        temp = sum[a];
-        sum[a] = sum[b];
-        sum[b] = temp;
     }
 
     return temp;
 }
 
-// сортировка строк матрицы по возрастанию суммы их элементов
+// сортировка строк матрицы по возрастанию произведения их элементов
 int sort_matrix(int arr[NMAX][NMAX], size_t n, size_t m)
 {
+    int sum[NMAX];
+
     for (size_t i = 0; i < n; i++)
-        for (size_t j = 0; j < m; j++)
+    {
+        sum[i] = 0;
+        for (size_t j = 0; j < n; j++)
             sum[i] += arr[i][j];
+    }
 
     for (size_t i = 0; i < n - 1; i++)
         for (size_t j = 0; j < n - i - 1; j++)
             if (sum[j] > sum[j + 1])
-                change_lines(arr, m, j, j + 1);
+                change_lines(arr, sum, m, j, j + 1);
 
     return 0;
 }
@@ -87,7 +83,6 @@ int main(void)
     {
         long long start_time, end_time;
         set_random_vals(arr, i);
-        clear_sum();
 
         start_time = get_millitime();
         for (size_t j = 0; j < M; j++)
@@ -97,9 +92,6 @@ int main(void)
         end_time = get_millitime();
 
         double res = end_time - start_time;
-
-        //print_matrix(arr, i, i);
-
         printf("%ld:%f\n", i, res / M);
     }
 
