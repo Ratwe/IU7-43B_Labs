@@ -1,0 +1,4 @@
+break sort
+watch a_i
+watch a_j
+watch diff_str
