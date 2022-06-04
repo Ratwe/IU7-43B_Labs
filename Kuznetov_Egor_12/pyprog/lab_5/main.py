@@ -1,5 +1,6 @@
 size = [ 1500, 500 ]
 FPS = 60
+count__ = 0
 running = True
 count_layers = 10
 layer_offset = 12
@@ -110,6 +111,8 @@ class Sprite(pg.sprite.Sprite):
         self.change_color(color)
         self.rect.centerx, self.rect.bottom = position
         self.update_pos()
+        global count__
+        count__ += 1
 
     def change_color(self, color):
         temp_image = pg.Surface(self.image.get_size()).convert_alpha()
@@ -158,6 +161,7 @@ hero = Sprite('source/slime/base.png',
         (400, 200),
         (size[0] // 2, size[1] - 50))
 
+print(count__)
 while running:
     clock.tick(FPS)
     window.fill(pg.Color(228, 239, 231))

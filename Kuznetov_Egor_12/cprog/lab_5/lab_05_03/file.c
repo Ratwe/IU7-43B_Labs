@@ -1,13 +1,15 @@
 #include <ctype.h>
 #include <string.h>
-#include "defines.h"
 #include "file.h"
+
+#define FIELD_LENGTH        sizeof(int)
+#define COUNT_INPUT_VALUES  1
 
 size_t get_length(FILE *file) 
 {
     fseek(file, 0, SEEK_END);
 
-    return ftell(file) / sizeof(int);
+    return ftell(file) / FIELD_LENGTH;
 }
 
 int get_number_by_pos(FILE *file, int pos)

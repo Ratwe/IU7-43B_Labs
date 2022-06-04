@@ -1,6 +1,11 @@
 #include "process.h"
-#include "defines.h"
 #include <stdbool.h>
+
+#define COUNT_INPUT_VALUE   1
+
+#define EXIT_SUCCESS        0
+#define EMPTY_INPUT         -1
+#define ONE_VALUE_INPUT     -2
 
 int process(FILE *f, int *count)
 {
