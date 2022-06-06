@@ -76,7 +76,7 @@ def add_point(canvas, all_points, x_entry, y_entry):
         return
 
     point_coordinate = (x - RADIUS, y - RADIUS, x + RADIUS, y + RADIUS)
-    canvas.create_oval(point_coordinate, width=1, fill='black')
+    canvas.create_oval(point_coordinate, width=1, fill='white', outline='white')
     all_points += [(x, y)]
 
     x_entry.delete(0, END)
