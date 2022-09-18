@@ -3,10 +3,14 @@
 
 int get_string(FILE *file, char *str)
 {
-    if (fgets(str, MAX_NAME_LEN + 2, file) == NULL)
+    if (fgets(str, MAX_NAME_LEN + 2, file) == NULL || str[0] == '\n')
         return WRONG_STR;
 
-    return RIGHT_STR;
+    for (int i = MAX_NAME_LEN + 1; i >= 0; i--)
+        if (str[i] == '\n')
+            return RIGHT_STR;
+
+    return WRONG_STR;
 }
 
 int get_double(FILE *file, double *var)
@@ -68,7 +72,6 @@ void sort_by_density(s_subject all_subjects[], size_t size)
         }
 }
 
-// Проверка на начало из подстроки
 int is_begining(char *sub_str, char *str)
 {
     size_t len = strlen(sub_str);

@@ -17,12 +17,12 @@ pos_in=()
 neg_in=()
 
 for file in $(find ../data -type f -name "pos_*_in.txt" | sort); do
-    file="./func_tests/""${file#*/}"
+    #file="./func_tests/""${file#*/}"
     pos_in+=("$file")
 done
 
 for file in $(find ../data -type f -name "neg_*_in.txt" | sort); do
-    file="./func_tests/""${file#*/}"
+    #file="./func_tests/""${file#*/}"
     neg_in+=("$file")
 done
  

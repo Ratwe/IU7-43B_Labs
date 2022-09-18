@@ -3,11 +3,15 @@
 test_in=$1
 test_args=$2
 
+test_in="./func_tests/""${test_in#*/}"
+
 if [ -n "$test_args" ]; then
-    programm_command="../../app.exe $(cat "$test_args")"
+    programm_command="./app.exe $(cat "$test_args")"
 else
-    programm_command="../../app.exe"
+    programm_command="./app.exe"
 fi
+
+cd ../../
 
 exit_code=0
 
