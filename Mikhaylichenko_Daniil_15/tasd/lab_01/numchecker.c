@@ -23,7 +23,7 @@ int is_double(char *str)
     size_t str_len = strlen(str);
 
     if (str_len > 1)
-        if (str[0] == str[1] && str[0] == '0')
+        if (str[0] == '0' && str[1] != '.')
             return false;
 
     if (str_len <= MANTISSA_LEN)

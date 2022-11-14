@@ -80,14 +80,14 @@ void round_num(my_double *result)
                 result->mantissa[i - 1]++;
                 result->mantissa[i] -= 10;
             }
+    }
 
-        if (result->mantissa[0] >= 10)
-        {
-            result->mantissa[0] -= 10;
-            shift_num(result->mantissa);
-            result->mantissa[0] = 1;
-            result->exp++;
-        }
+    if (result->mantissa[0] >= 10)
+    {
+        result->mantissa[0] -= 10;
+        shift_num(result->mantissa);
+        result->mantissa[0] = 1;
+        result->exp++;
     }
 }
 
@@ -123,6 +123,12 @@ int divide(my_double *first_num, my_double *second_num, my_double *result)
     }
 
     round_num(result);
+
+    if (abs(result->exp) > MAX_EXP)
+    {
+        ERROR_LOG("EXPONENT OVERFLOW");
+        return EXPONENT_OVERFLOW;
+    }
       
     return EXIT_SUCCESS;
 }
@@ -130,7 +136,7 @@ int divide(my_double *first_num, my_double *second_num, my_double *result)
 // Функция вывода числа
 void print_result(my_double *result)
 {
-    print_d(*result);
+    print_d(*result); 
 
     printf("Result = ");
 
@@ -158,7 +164,7 @@ void print_result(my_double *result)
         if (result->mantissa[i] > 0)
             real_len++;
 
-    for (int i = 0; i < real_len + 1; i++)
+    for (int i = 0; i < real_len; i++)
         printf("%d", result->mantissa[i]);
 
     if (result->exp != 0)

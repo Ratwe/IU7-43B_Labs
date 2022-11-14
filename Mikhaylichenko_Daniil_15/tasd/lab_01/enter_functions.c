@@ -44,7 +44,7 @@ int scan_my_double(my_double *num)
     char str[MAX_STR_LEN + 1];
 
     printf("Enter double:\n");
-    printf("---------|----------|---------|\n");
+    printf("---------|---------|---------|[eE][-----]\n");
     rc = enter_string(str, &(num->str_len), MAX_STR_LEN + 1);
     if (rc != EXIT_SUCCESS)
     {
@@ -76,7 +76,7 @@ int scan_my_int(my_double *num)
     char str[MANTISSA_LEN + 1];
 
     printf("Enter int:\n");
-    printf("---------|----------|---------|\n");
+    printf("---------|---------|---------|\n");
     rc = enter_string(str, &(num->str_len),  MANTISSA_LEN + 1);
     if (rc != EXIT_SUCCESS)
     {

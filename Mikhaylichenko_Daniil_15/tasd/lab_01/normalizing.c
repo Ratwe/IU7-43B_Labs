@@ -40,7 +40,9 @@ void normalize_noexp_double(my_double *num, char *str)
     bool point_flag = false, null_flag = false;
     int index = 0;
 
-    for (size_t i = start_index; i < num->str_len; i++, index++)
+    size_t str_len = strlen(str);
+
+    for (size_t i = start_index; i < str_len; i++, index++)
     {
         if (str[i] == '.')
         {
@@ -78,13 +80,9 @@ int normalize_exp_double(my_double *num, char *str)
 
        char *pch = strtok(copy, "eE");
 
-       printf("MANTISSA = { %s }\n", pch);
-
        normalize_noexp_double(num, pch);
 
        pch = strtok(NULL, "eE");       
-
-       printf("EXP = { %s }\n", pch);
 
        int temp_exp;
        sscanf(pch, "%d", &temp_exp);

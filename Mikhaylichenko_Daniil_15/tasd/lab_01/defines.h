@@ -8,6 +8,7 @@
 #define MANTISSA_LEN            30
 #define EXP_LEN                 5
 #define MAX_STR_LEN             MANTISSA_LEN + EXP_LEN + 2
+#define MAX_EXP                 99999
 
 #define IS_POSITIVE             1
 #define IS_NEGATIVE             -1
@@ -17,6 +18,7 @@
 #define EMPTY_STRING            103
 #define DIVISION_BY_ZERO        104
 #define ARRAY_ALLOCATE_ERROR    105
+#define EXPONENT_OVERFLOW       106
 
 #ifdef DEBUG
 #define ERROR_LOG(str) fprintf(stderr, "\033[31m>> ERROR: %s\033[0m\n", str)
