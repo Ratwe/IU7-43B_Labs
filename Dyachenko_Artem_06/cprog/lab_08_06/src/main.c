@@ -9,22 +9,31 @@ int main(void)
 {
     int m, n, p, q, rc = 0;
 
+    int **am = NULL;
+    int **bm = NULL;
+
     printf("Введите размерность матрицы А: ");
     if ((rc = scanf("%d %d", &m, &n) != RC))
+    {
+        free_matrix(am, m);
         return SCANF_ERR;
+    }
 
     if (m < 1 || n < 1)
+    {
+        free_matrix(am, m);
         return MATRIX_SIZE_ERR;
+    }
 
     int **buff = allocate_matrix(m, n);
 
     if (!buff)
     {
-        free_matrix(buff, m);
+        free_matrix(am, m);
         return ALLOCATE_MATRIX_ERR;
     }
 
-    int **am = buff;
+    am = buff;
     int error_code = EXIT_SUCCESS;
 
     if ((error_code = read_matrix(am, m, n)))
@@ -35,7 +44,10 @@ int main(void)
 
     printf("Введите размерность матрицы B: ");
     if ((rc = scanf("%d %d", &p, &q) != RC))
+    {
+        free_matrix(am, m);
         return SCANF_ERR;
+    }
 
     if (p < 1 || q < 1)
     {
@@ -47,12 +59,11 @@ int main(void)
 
     if (!buff)
     {
-        free_matrix(buff, p);
         free_matrix(am, m);
         return ALLOCATE_MATRIX_ERR;
     }
 
-    int **bm = buff;
+    bm = buff;
 
     if ((error_code = read_matrix(bm, p, q)))
     {
@@ -93,10 +104,20 @@ LOG_DEBUG("k, s = %d, %d\n", k, s);
 
     int z = (k > s) ? k : s;
     if ((error_code = square_up(am, &m, &n, z)))
+    {
+        free_matrix(am, m);
+        free_matrix(bm, p);
+
         return error_code;
+    }
 
     if ((error_code = square_up(bm, &p, &q, z)))
+    {
+        free_matrix(am, m);
+        free_matrix(bm, p);
+
         return error_code;
+    }
 
 #ifdef DEBUG
 LOG_DEBUG("square_up: \n");
@@ -133,9 +154,8 @@ print_matrix(bm, p, q);
 
     if (!buff)
     {
-        free_matrix(buff, p);
-        free_matrix(am, m);
-        free_matrix(bm, m);
+        free_matrix(am, z);
+        free_matrix(bm, z);
         return ALLOCATE_MATRIX_ERR;
     }
 

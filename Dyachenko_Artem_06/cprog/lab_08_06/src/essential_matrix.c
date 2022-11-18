@@ -5,10 +5,12 @@
 
 void free_matrix(int **matrix, int m)
 {
-    for (int i = 0; i < m; i++)
-        free(matrix[i]);  // Освобождение памяти строк
-
-    free(matrix);  // Освобождение памяти массивов указателей
+    if (matrix)
+    {
+        for (int i = 0; i < m; i++)
+            free(matrix[i]);  // Освобождение памяти строк
+        free(matrix);  // Освобождение памяти массивов указателей
+    }
 }
 
 int **allocate_matrix(int m, int n)
