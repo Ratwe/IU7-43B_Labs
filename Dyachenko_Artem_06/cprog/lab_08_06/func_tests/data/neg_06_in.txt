@@ -1,0 +1,17 @@
+7
+apple
+25
+banana
+10
+orange
+5
+bane
+101
+axe
+1010
+wood
+10011
+forest
+500
+limit reached
+252525
