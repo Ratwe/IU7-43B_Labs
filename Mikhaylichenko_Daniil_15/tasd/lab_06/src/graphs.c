@@ -1,6 +1,6 @@
 #include "../inc/graphs.h"
 
-void write_node(FILE **file, tree_node_t *tree)
+void write_node_no_color(FILE **file, tree_node_t *tree)
 {
     if (tree->left != NULL)
         fprintf(*file, "%s -> %s;\n", tree->word, tree->left->word);
@@ -10,18 +10,30 @@ void write_node(FILE **file, tree_node_t *tree)
         fprintf(*file, "%s;\n", tree->word);
 }
 
-void write_nodes(tree_node_t *tree, FILE **file)
+void write_node_color(FILE **file, tree_node_t *tree)
+{
+    if (tree->color == 1)
+        fprintf(*file, "%s [fillcolor=\"green\"];\n", tree->word);
+    if (tree->left != NULL)
+        fprintf(*file, "%s -> %s;\n", tree->word, tree->left->word);
+    if (tree->right != NULL)
+        fprintf(*file, "%s -> %s;\n", tree->word, tree->right->word);
+    else if (tree->left == NULL)
+        fprintf(*file, "%s;\n", tree->word);
+}
+
+void write_nodes(tree_node_t *tree, FILE **file, void (*func)(FILE **file, tree_node_t *tree))
 {
     if (tree == NULL)
         return;
 
-    write_node(file, tree);
+    func(file, tree);
 
-    write_nodes(tree->left, file);
-    write_nodes(tree->right, file);
+    write_nodes(tree->left, file, func);
+    write_nodes(tree->right, file, func);
 }
 
-int tree_to_dot(tree_node_t *tree, char *dot_name)
+int tree_to_dot(tree_node_t *tree, char *dot_name, void (*func)(FILE **file, tree_node_t *tree))
 {
     if (tree == NULL)
     {
@@ -37,8 +49,9 @@ int tree_to_dot(tree_node_t *tree, char *dot_name)
     }
 
     fprintf(dot_file, "digraph tree {\n");
+    fprintf(dot_file, "node [style=\"filled\"];\n");
 
-    write_nodes(tree, &dot_file);
+    write_nodes(tree, &dot_file, func);
 
     fprintf(dot_file, "}\n");
 
@@ -74,22 +87,6 @@ int dot_to_svg(char *dot_name, char *svg_name)
 
     return rc;
 }
-/* int dot_to_svg(char *dot_name, char *svg_name) */
-/* { */
-/*     int rc; */
-
-/*     if (!fork()) */
-/*     { */
-/*         rc = execlp("dot", "dot", "-Tsvg", dot_name, "-o", svg_name, NULL); */
-/*         if (rc != EXIT_SUCCESS) */
-/*         { */
-/*             ERROR_LOG("Ошибка создания изображения"); */
-/*             return rc; */
-/*         } */
-/*     } */
-
-/*     return EXIT_SUCCESS; */
-/* } */
 
 int open_svg(char *svg_name)
 {

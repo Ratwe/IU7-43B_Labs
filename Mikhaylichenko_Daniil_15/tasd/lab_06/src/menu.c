@@ -14,7 +14,7 @@ void print_menu()
     puts("|4.+Добавить слово в дерево                                                       |");
     puts("|5.+Удалить слово из дерева                                                       |");
     puts("|6.+Найти слово в дереве                                                          |");
-    puts("|7.-Определить кол-во вершин, содержащих слова, начинающиеся на указанную букву   |");
+    puts("|7.+Определить кол-во вершин, содержащих слова, начинающиеся на указанную букву   |");
     puts("|8.-Сравнить время поиска начинающихся на указанную букву слов в дереве и в файле |");
     puts("|0.+Выход                                                                         |");
     puts("+---------------------------------------------------------------------------------+");
@@ -73,7 +73,7 @@ int menu(void)
                 break;
             case 3:
                 ACTION_LOG("Создание .dot файла...");
-                rc = tree_to_dot(tree, DOT_FILE);
+                rc = tree_to_dot(tree, DOT_FILE, write_node_no_color);
                 if (rc != EXIT_SUCCESS)
                     break;
 
@@ -135,6 +135,35 @@ int menu(void)
                 SUCCESS(">>Операция заверщена.");
                 break;
             case 7:
+                printf("Введите букву: ");
+                char ch[1 + 1];
+                rc = enter_string(ch, 1);
+                if (rc != EXIT_SUCCESS)
+                {
+                    ERROR_LOG("Введён неверный символ");
+                    return rc;
+                }
+
+                ACTION_LOG("Поиск слов...");
+                rc = find_letters(&tree, ch);
+                if (rc != EXIT_SUCCESS)
+                    break;
+
+                ACTION_LOG("Создание .dot файла...");
+                rc = tree_to_dot(tree, DOT_FILE, write_node_color);
+                if (rc != EXIT_SUCCESS)
+                    break;
+
+                ACTION_LOG("Создания .svg изображения...");
+                rc = dot_to_svg(DOT_FILE, SVG_FILE);
+                if (rc != EXIT_SUCCESS)
+                    return rc;
+
+                ACTION_LOG("Открытие .svg изображения...");
+                rc = open_svg(SVG_FILE);
+                if (rc != EXIT_SUCCESS)
+                    break;
+
                 SUCCESS(">>Операция заверщена.");
                 break;
             case 8:

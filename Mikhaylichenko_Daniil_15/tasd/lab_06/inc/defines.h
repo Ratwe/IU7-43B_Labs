@@ -9,6 +9,7 @@
 #define ERROR_LOG(str)  fprintf(stderr, "\033[31m>>ERROR: %s\033[0m\n", str)
 #define SUCCESS(str)    fprintf(stdout, "\033[32m%s\033[0m\n", str)
 #define FAILURE(str)    fprintf(stdout, "\033[35m%s\033[0m\n", str)
+#define WORD(str)       fprintf(stdout, "\033[33m%s\033[0m\n", str)
 
 #define DATABASE            "./data/text.txt"
 #define DOT_FILE            "./out/tree.dot"

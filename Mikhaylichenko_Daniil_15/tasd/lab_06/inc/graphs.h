@@ -8,7 +8,9 @@
 #include "../inc/defines.h"
 #include "../inc/tree.h"
 
-int tree_to_dot(tree_node_t *tree, char *dot_name);
+void write_node_no_color(FILE **file, tree_node_t *tree);
+void write_node_color(FILE **file, tree_node_t *tree);
+int tree_to_dot(tree_node_t *tree, char *dot_name, void (*func)(FILE **file, tree_node_t *tree));
 int dot_to_svg(char *dot_name, char *svg_name);
 int open_svg(char *svg_name);
 

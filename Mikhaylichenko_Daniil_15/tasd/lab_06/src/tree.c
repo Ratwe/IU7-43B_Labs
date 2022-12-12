@@ -173,3 +173,38 @@ void search_word(tree_node_t *tree, char *str)
 
     (node == NULL) ? FAILURE("    СЛОВО НЕ НАЙДЕНО") : SUCCESS("    СЛОВО НАЙДЕНО");
 }
+
+void find_letter(tree_node_t *tree, char *ch, int *counter)
+{
+    if (tree == NULL)
+        return;
+
+    if (!strncmp(ch, tree->word, 1))
+    {
+        printf("    Найдено слово: ");
+        WORD(tree->word);
+        (*counter)++;
+        tree->color = 1;
+    }
+    else
+        tree->color = 0;
+
+    find_letter(tree->left, ch, counter);
+    find_letter(tree->right, ch, counter);
+}
+
+int find_letters(tree_node_t **tree, char *ch)
+{
+    if (*tree == NULL)
+    {
+        ERROR_LOG("Пустое дерево");
+        return EMPTY_TREE;
+    }
+
+    int counter = 0;
+    find_letter(*tree, ch, &counter);
+
+    printf("    Итог: %d\n", counter);
+
+    return EXIT_SUCCESS;
+}

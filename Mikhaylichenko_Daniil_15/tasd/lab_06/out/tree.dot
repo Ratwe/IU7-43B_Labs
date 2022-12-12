@@ -1,0 +1,18 @@
+digraph tree {
+node [style="filled"];
+Never [fillcolor="green"];
+Never -> Gonna;
+Never -> You;
+Gonna -> Give;
+Give;
+You -> Up;
+You -> never;
+Up;
+never -> gonna;
+never -> you;
+gonna -> down;
+gonna -> let;
+down;
+let;
+you;
+}

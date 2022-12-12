@@ -46,12 +46,12 @@ int scan_command(int *command)
 
 int enter_string(char *str, size_t max_len)
 {
-    memset(str, 0, MAX_STR_LEN + 1);
+    memset(str, 0, max_len + 1);
     size_t str_len = 0;
 
     for (char symbol; (symbol = getchar()) != '\n' && symbol != EOF;)
     {
-        if (str_len < max_len - 1)
+        if (str_len < max_len)
             str[str_len++] = symbol;
         else
             return WRONG_STR;
