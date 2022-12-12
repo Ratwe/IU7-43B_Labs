@@ -1,14 +1,13 @@
 #include "../inc/graphs.h"
-#include <stdlib.h>
-#include <sys/types.h>
-#include <unistd.h>
 
-void write_node(FILE **file, tree_node_t *cur, tree_node_t *next)
+void write_node(FILE **file, tree_node_t *tree)
 {
-    if (cur == NULL || next == NULL)
-        return;
-
-    fprintf(*file, "%s -> %s;\n", cur->word, next->word);
+    if (tree->left != NULL)
+        fprintf(*file, "%s -> %s;\n", tree->word, tree->left->word);
+    if (tree->right != NULL)
+        fprintf(*file, "%s -> %s;\n", tree->word, tree->right->word);
+    else if (tree->left == NULL)
+        fprintf(*file, "%s;\n", tree->word);
 }
 
 void write_nodes(tree_node_t *tree, FILE **file)
@@ -16,8 +15,7 @@ void write_nodes(tree_node_t *tree, FILE **file)
     if (tree == NULL)
         return;
 
-    write_node(file, tree, tree->left);
-    write_node(file, tree, tree->right);
+    write_node(file, tree);
 
     write_nodes(tree->left, file);
     write_nodes(tree->right, file);
@@ -56,19 +54,42 @@ int tree_to_dot(tree_node_t *tree, char *dot_name)
 int dot_to_svg(char *dot_name, char *svg_name)
 {
     int rc;
+    pid_t postprocess_id;
 
-    if (!fork())
+    postprocess_id = fork();
+
+    if (postprocess_id == -1)
     {
-        rc = execlp("dot", "dot", "-Tsvg", dot_name, "-o", svg_name, NULL);
-        if (rc != EXIT_SUCCESS)
-        {
-            ERROR_LOG("Ошибка создания изображения");
-            return rc;
-        }
+        ERROR_LOG("Ошибка создания процесса");
+        return EXIT_FAILURE;
     }
 
-    return EXIT_SUCCESS;
+    if (!postprocess_id)
+        execlp("dot", "dot", "-Tsvg", dot_name, "-o", svg_name, NULL);
+
+    waitpid(postprocess_id, &rc, 0);
+
+    if (rc != EXIT_SUCCESS)
+        ERROR_LOG("Ошибка создания изображения");
+
+    return rc;
 }
+/* int dot_to_svg(char *dot_name, char *svg_name) */
+/* { */
+/*     int rc; */
+
+/*     if (!fork()) */
+/*     { */
+/*         rc = execlp("dot", "dot", "-Tsvg", dot_name, "-o", svg_name, NULL); */
+/*         if (rc != EXIT_SUCCESS) */
+/*         { */
+/*             ERROR_LOG("Ошибка создания изображения"); */
+/*             return rc; */
+/*         } */
+/*     } */
+
+/*     return EXIT_SUCCESS; */
+/* } */
 
 int open_svg(char *svg_name)
 {

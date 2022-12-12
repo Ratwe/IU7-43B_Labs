@@ -2,6 +2,8 @@
 #define __GRAPHS_H__
 
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 #include "../inc/defines.h"
 #include "../inc/tree.h"

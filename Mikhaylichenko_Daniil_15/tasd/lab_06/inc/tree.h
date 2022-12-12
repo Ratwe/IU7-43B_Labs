@@ -13,6 +13,8 @@ typedef struct tree_node
 
 void free_tree(tree_node_t **tree);
 int fill_tree(tree_node_t **tree, FILE **file);
+int tree_push(tree_node_t **tree, char *str);
+int tree_pop(tree_node_t **tree, char *str);
 void search_word(tree_node_t *tree, char *str);
 
 #endif // __TREE_H__

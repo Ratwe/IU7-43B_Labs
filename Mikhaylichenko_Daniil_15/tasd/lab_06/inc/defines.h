@@ -7,8 +7,8 @@
 
 #define ACTION_LOG(str) fprintf(stdout, "    \033[34m%s\033[0m\n", str)
 #define ERROR_LOG(str)  fprintf(stderr, "\033[31m>>ERROR: %s\033[0m\n", str)
-#define SUCCESS(str)    fprintf(stdout, "    \033[32m%s\033[0m\n", str)
-#define FAILURE(str)    fprintf(stdout, "    \033[35m%s\033[0m\n", str)
+#define SUCCESS(str)    fprintf(stdout, "\033[32m%s\033[0m\n", str)
+#define FAILURE(str)    fprintf(stdout, "\033[35m%s\033[0m\n", str)
 
 #define DATABASE            "./data/text.txt"
 #define DOT_FILE            "./out/tree.dot"
@@ -24,6 +24,7 @@
 #define WRONG_INPUT         103
 #define WRONG_STR           104
 #define EMPTY_TREE          105
-#define FORK_ERROR          106
+#define NODE_EXIST          106
+#define FORK_ERROR          107
 
 #endif // __DEFINES_H__

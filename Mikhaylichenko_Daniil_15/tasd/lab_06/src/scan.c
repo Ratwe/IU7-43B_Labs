@@ -1,5 +1,6 @@
 #include "../inc/scan.h"
 #include <stdlib.h>
+#include <string.h>
 
 int check_buffer(void)
 {
@@ -43,8 +44,9 @@ int scan_command(int *command)
     return EXIT_SUCCESS;
 }
 
-int enter_string(char str[], size_t max_len)
+int enter_string(char *str, size_t max_len)
 {
+    memset(str, 0, MAX_STR_LEN + 1);
     size_t str_len = 0;
 
     for (char symbol; (symbol = getchar()) != '\n' && symbol != EOF;)

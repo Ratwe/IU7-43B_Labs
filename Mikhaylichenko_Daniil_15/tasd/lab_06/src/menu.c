@@ -2,18 +2,20 @@
 #include "../inc/scan.h"
 #include "../inc/tree.h"
 #include "../inc/graphs.h"
+#include <stdlib.h>
 
 void print_menu()
 {
     puts("+---------------------------------------------------------------------------------+");
     puts("|Главное меню:                                                                    |");
-    puts("|1.+Загрузить ДДП дерево                                                          |");
-    puts("|2.+Вывести ДДП                                                                   |");
-    puts("|3.-Добавить слово в дерево                                                       |");
-    puts("|4.-Удалить слово из дерева                                                       |");
-    puts("|5.+Найти слово в дереве                                                          |");
-    puts("|6.-Определить кол-во вершин, содержащих слова, начинающиеся на указанную букву   |");
-    puts("|7.-Сравнить время поиска начинающихся на указанную букву слов в дереве и в файле |");
+    puts("|1.+Загрузить ДДП дерево из файла                                                 |");
+    puts("|2.+Очистить дерево                                                               |");
+    puts("|3.+Вывести ДДП                                                                   |");
+    puts("|4.+Добавить слово в дерево                                                       |");
+    puts("|5.+Удалить слово из дерева                                                       |");
+    puts("|6.+Найти слово в дереве                                                          |");
+    puts("|7.-Определить кол-во вершин, содержащих слова, начинающиеся на указанную букву   |");
+    puts("|8.-Сравнить время поиска начинающихся на указанную букву слов в дереве и в файле |");
     puts("|0.+Выход                                                                         |");
     puts("+---------------------------------------------------------------------------------+");
 }
@@ -22,6 +24,7 @@ int menu(void)
 {
     int rc;
     int command;
+    char str[MAX_STR_LEN + 1];
 
     tree_node_t *tree = NULL;
 
@@ -60,8 +63,15 @@ int menu(void)
                     ERROR_LOG("Ошибка закрытия файла");
                     return FILE_CLOSE_ERROR;
                 }
+                SUCCESS(">>Операция заверщена.");
                 break;
             case 2:
+                ACTION_LOG("Очистка дерева...");
+                free_tree(&tree);
+
+                SUCCESS(">>Операция завершена...");
+                break;
+            case 3:
                 ACTION_LOG("Создание .dot файла...");
                 rc = tree_to_dot(tree, DOT_FILE);
                 if (rc != EXIT_SUCCESS)
@@ -76,25 +86,59 @@ int menu(void)
                 rc = open_svg(SVG_FILE);
                 if (rc != EXIT_SUCCESS)
                     break;
-                break;
-            case 3:
+                SUCCESS(">>Операция заверщена.");
                 break;
             case 4:
-                break;
-            case 5:
-                printf("Введите искомое слово: ");
-                char str[MAX_STR_LEN + 1];
+                printf("Введите добавляемое слово: ");
                 rc = enter_string(str, MAX_STR_LEN);
                 if (rc != EXIT_SUCCESS)
                 {
                     ERROR_LOG("Введена неверная строка");
-                    continue;
+                    return rc;
+                }
+
+                ACTION_LOG("Вставка слова в дерево...");
+                rc = tree_push(&tree, str);
+                if (rc != EXIT_SUCCESS)
+                    return rc;
+
+                SUCCESS(">>Операция заверщена.");
+                break;
+            case 5:
+                printf("Введите удаляемое слово: ");
+                rc = enter_string(str, MAX_STR_LEN);
+                if (rc != EXIT_SUCCESS)
+                {
+                    ERROR_LOG("Введена неверная строка");
+                    return rc;
+                }
+
+                ACTION_LOG("Удаление слова из дерева...");
+                rc = tree_pop(&tree, str);
+                if (rc != EXIT_SUCCESS)
+                    break;
+
+                SUCCESS(">>Операция заверщена.");
+                break;
+            case 6:
+                printf("Введите искомое слово: ");
+                rc = enter_string(str, MAX_STR_LEN);
+                if (rc != EXIT_SUCCESS)
+                {
+                    ERROR_LOG("Введена неверная строка");
+                    break;
                 }
 
                 ACTION_LOG("Поиск слова в дереве...");
                 search_word(tree, str);
+
+                SUCCESS(">>Операция заверщена.");
                 break;
             case 7:
+                SUCCESS(">>Операция заверщена.");
+                break;
+            case 8:
+                SUCCESS(">>Операция завершена.");
                 break;
         }
         printf("\n");
