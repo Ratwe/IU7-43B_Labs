@@ -1,6 +1,4 @@
 #include "../inc/tree.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 void free_node(tree_node_t *tree)
 {
@@ -25,7 +23,7 @@ tree_node_t *create_node(char *str)
     if (node != NULL)
     {
         strncpy(node->word, str, MAX_STR_LEN);
-        node->height = 1;
+        node->color = 0;
         node->left = NULL;
         node->right = NULL;
     }

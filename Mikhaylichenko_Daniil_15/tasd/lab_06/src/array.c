@@ -1,6 +1,4 @@
 #include "../inc/array.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 size_t get_file_len(FILE **file)
 {

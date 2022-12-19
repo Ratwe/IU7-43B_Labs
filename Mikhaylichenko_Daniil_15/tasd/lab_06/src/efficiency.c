@@ -1,8 +1,6 @@
 #include "../inc/efficiency.h"
 #include "../inc/tree.h"
 #include "../inc/array.h"
-#include <stdio.h>
-#include <string.h>
 
 void print_structs(size_t *tree_results, size_t *file_results, int index)
 {

@@ -6,7 +6,6 @@
 typedef struct tree_node
 {
     char word[MAX_STR_LEN + 1];
-    unsigned char height;
     unsigned char color;
     struct tree_node *left;
     struct tree_node *right;

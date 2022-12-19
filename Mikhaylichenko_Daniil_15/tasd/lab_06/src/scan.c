@@ -1,6 +1,4 @@
 #include "../inc/scan.h"
-#include <stdlib.h>
-#include <string.h>
 
 int check_buffer(void)
 {
