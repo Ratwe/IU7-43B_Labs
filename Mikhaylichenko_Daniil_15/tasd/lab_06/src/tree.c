@@ -75,6 +75,7 @@ tree_node_t *insert_node(tree_node_t *tree, char *str)
         tree->right = insert_node(tree->right, str);
     else
     {
+        printf("Слово \"%s\"\n", str);
         ERROR_LOG("Повтор слова");
         exit(WRONG_STR);
     }
@@ -207,4 +208,16 @@ int find_letters(tree_node_t **tree, char *ch)
     printf("    Итог: %d\n", counter);
 
     return EXIT_SUCCESS;
+}
+
+void tree_sort(tree_node_t *tree, char **array, int *index)
+{
+    if (tree != NULL)
+    {
+        tree_sort(tree->left, array, index);
+        array[*index] = malloc(sizeof(char) + (MAX_STR_LEN + 1));
+        strcpy(array[*index], tree->word);
+        (*index)++;
+        tree_sort(tree->right, array, index);
+    }
 }

@@ -1,9 +1,10 @@
 digraph tree {
 node [style="filled"];
-Never [fillcolor="green"];
 Never -> Gonna;
 Never -> You;
+Gonna [fillcolor="green"];
 Gonna -> Give;
+Give [fillcolor="green"];
 Give;
 You -> Up;
 You -> never;

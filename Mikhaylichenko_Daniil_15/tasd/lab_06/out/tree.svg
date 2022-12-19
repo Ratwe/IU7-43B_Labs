@@ -12,13 +12,13 @@
 <!-- Never -->
 <g id="node1" class="node">
 <title>Never</title>
-<ellipse fill="green" stroke="black" cx="83.3" cy="-306" rx="38.99" ry="18"/>
+<ellipse fill="lightgrey" stroke="black" cx="83.3" cy="-306" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="83.3" y="-302.3" font-family="Times,serif" font-size="14.00">Never</text>
 </g>
 <!-- Gonna -->
 <g id="node2" class="node">
 <title>Gonna</title>
-<ellipse fill="lightgrey" stroke="black" cx="40.3" cy="-234" rx="40.09" ry="18"/>
+<ellipse fill="green" stroke="black" cx="40.3" cy="-234" rx="40.09" ry="18"/>
 <text text-anchor="middle" x="40.3" y="-230.3" font-family="Times,serif" font-size="14.00">Gonna</text>
 </g>
 <!-- Never&#45;&gt;Gonna -->
@@ -42,7 +42,7 @@
 <!-- Give -->
 <g id="node4" class="node">
 <title>Give</title>
-<ellipse fill="lightgrey" stroke="black" cx="40.3" cy="-162" rx="31.7" ry="18"/>
+<ellipse fill="green" stroke="black" cx="40.3" cy="-162" rx="31.7" ry="18"/>
 <text text-anchor="middle" x="40.3" y="-158.3" font-family="Times,serif" font-size="14.00">Give</text>
 </g>
 <!-- Gonna&#45;&gt;Give -->

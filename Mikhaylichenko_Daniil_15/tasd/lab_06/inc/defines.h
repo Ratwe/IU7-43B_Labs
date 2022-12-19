@@ -16,7 +16,7 @@
 #define SVG_FILE            "./out/tree.svg"
 
 #define MIN_COMMAND         0
-#define MAX_COMMAND         7
+#define MAX_COMMAND         8
 
 #define MAX_STR_LEN         25
 
