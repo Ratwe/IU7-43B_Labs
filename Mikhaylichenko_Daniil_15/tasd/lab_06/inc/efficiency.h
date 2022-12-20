@@ -5,7 +5,7 @@
 
 #include "../inc/defines.h"
 
-#define ITERS                        5
+#define ITERS                        100
 
 #define SMALL_FILE_NAME             "./data/small.txt"
 #define MIDDLE_FILE_NAME            "./data/middle.txt"

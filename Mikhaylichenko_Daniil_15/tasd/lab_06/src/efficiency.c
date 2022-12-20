@@ -1,6 +1,7 @@
 #include "../inc/efficiency.h"
 #include "../inc/tree.h"
 #include "../inc/array.h"
+#include <time.h>
 
 void print_structs(size_t *tree_results, size_t *file_results, int index)
 {
@@ -24,7 +25,7 @@ void print_results(results_t *results)
     }
     printf("\n");
 
-    printf("\033[43mПоиск (количество сравнений)\033[0m\n");
+    printf("\033[43mПоиск (время в микросекундах)\033[0m\n");
     for (size_t i = 0; i < sizeof(file_names) / sizeof(file_names[0]); i++)
     {
         printf("\033[4m%s\033[0m\n", file_names[i]);
@@ -51,7 +52,6 @@ void run_efficiency(void)
 {
     clock_t start, end;
     tree_node_t *tree = NULL;
-    tree_node_t *result_tree = NULL;
     results_t results = { 0 };
     array_t *array;
 
@@ -60,11 +60,16 @@ void run_efficiency(void)
                            REVERSE_SORTED_FILE_NAME };
     FILE *file;
     size_t len;
-    size_t search_compares;
     char **sorted_array;
     int sort_index;
 
-    char *words[ITERS] = { "pizza", "charge", "enjoy", "guess", "talk" };
+    char *letters[ITERS];
+    for (int i = 0; i < ITERS; i++)
+    {
+        char letter = rand() % ('z' - 'a') + 'a';
+        letters[i] = malloc(sizeof(char) * 1);
+        strncpy(letters[i], &letter, 1);
+    }
 
     for (size_t name = 0; name < sizeof(file_names) / sizeof(file_names[0]); name++)
     {
@@ -86,12 +91,16 @@ void run_efficiency(void)
                 printf("Элементов в файле: %lu\n", len);
             free_array(array->data, array->size);
 
-            // Подсчёт количества сравнений при поиске элемента в массиве
+            // Замер времени поиска в массиве
+            start = clock();
             array = fill_array(file_names[name]);
-            for (search_compares = 0; search_compares < array->size; search_compares++)
-                if (!strcmp(array->data[search_compares], words[i]))
-                    break;
-            results.file_searching[name] += search_compares;
+            int counter = 0;
+            for (size_t j = 0; j < array->size; j++)
+                if (!strncmp(array->data[j], letters[i], 1))
+                    counter++;
+            end = clock();
+            results.file_searching[name] += (end - start) / (CLOCKS_PER_SEC / 1000000);
+
             fseek(file, 0, SEEK_SET);
             free_array(array->data, array->size);
 
@@ -107,21 +116,11 @@ void run_efficiency(void)
             fseek(file, 0, SEEK_SET);
             free_array(sorted_array, len);
 
-            // Подсчёт количества сравнений при поиске элемента в ДДП
-            search_compares = 0;
-            result_tree = tree;
-            for (;result_tree != NULL;)
-            {
-                int compare = strcmp(words[i], result_tree->word);
-                if (compare < 0)
-                    result_tree = result_tree->left;
-                else if (compare > 0)
-                    result_tree = result_tree->right;
-                else
-                    break;
-                search_compares++;
-            }
-            results.tree_searching[name] += search_compares;
+            // Замер времени поиска в ДДП
+            start = clock();
+            raw_find_letters(&tree, letters[i]);
+            end = clock();
+            results.tree_searching[name] += (end - start) / (CLOCKS_PER_SEC / 1000000);
             free_tree(&tree);
         }
         fclose(file);

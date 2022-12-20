@@ -208,6 +208,27 @@ int find_letters(tree_node_t **tree, char *ch)
     return EXIT_SUCCESS;
 }
 
+void raw_find_letter(tree_node_t *tree, char *ch, int *counter)
+{
+    if (tree == NULL)
+        return;
+
+    if (!strncmp(ch, tree->word, 1))
+        (*counter)++;
+
+    raw_find_letter(tree->left, ch, counter);
+    raw_find_letter(tree->right, ch, counter);
+}
+
+void raw_find_letters(tree_node_t **tree, char *ch)
+{
+    if (*tree == NULL)
+        return;
+
+    int counter = 0;
+    raw_find_letter(*tree, ch, &counter);
+}
+
 void tree_sort(tree_node_t *tree, char **array, int *index)
 {
     if (tree != NULL)

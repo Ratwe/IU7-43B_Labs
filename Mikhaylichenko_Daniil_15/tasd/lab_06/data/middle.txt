@@ -87,7 +87,7 @@ skirt
 abortive
 exuberant
 psychedelic
-straight
+pizza
 wealthy
 adjoining
 interesting
@@ -95,7 +95,7 @@ care
 invent
 trouble
 picayune
-recess
+enjoy
 disastrous
 weigh
 arrogant
@@ -324,7 +324,7 @@ beneficial
 assorted
 gusty
 agree
-testy
+charge
 hydrant
 daughter
 towering
@@ -577,7 +577,7 @@ fly
 dinosaurs
 shoe
 frame
-pat
+guess
 innate
 wreck
 grandiose

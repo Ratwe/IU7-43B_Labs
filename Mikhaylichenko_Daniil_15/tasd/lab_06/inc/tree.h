@@ -17,6 +17,7 @@ int tree_push(tree_node_t **tree, char *str);
 int tree_pop(tree_node_t **tree, char *str);
 void search_word(tree_node_t *tree, char *str);
 int find_letters(tree_node_t **tree, char *ch);
+void raw_find_letters(tree_node_t **tree, char *ch);
 void tree_sort(tree_node_t *tree, char **array, int *index);
 
 #endif // __TREE_H__
