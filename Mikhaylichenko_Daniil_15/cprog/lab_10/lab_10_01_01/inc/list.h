@@ -10,8 +10,14 @@ typedef struct node
     struct node *next;
 } node_t;
 
+typedef struct
+{
+    int *data;
+    int len;
+} array_t;
+
 void free_list(node_t **list);
-int fill_list(char *fname, node_t **list);
+int fill_list(char *fname, node_t **list, array_t *arr);
 void *pop_front(node_t **head);
 void *pop_back(node_t **head);
 int swap_edges(node_t **list);

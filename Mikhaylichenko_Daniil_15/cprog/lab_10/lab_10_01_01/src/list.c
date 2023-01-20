@@ -1,6 +1,4 @@
 #include "../inc/list.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 void free_list(node_t **list)
 {
@@ -24,20 +22,6 @@ node_t *create_node(void *num)
     new_node->next = NULL;
 
     return new_node;
-}
-
-node_t *add_node(node_t **head, node_t *node)
-{
-    node_t *temp = *head;
-
-    if (!(*head))
-        return node;
-
-    for (; temp->next != NULL; temp = temp->next);
-
-    temp->next = node;
-
-    return *head;
 }
 
 int move_to_start(node_t **list, void *num)
@@ -71,13 +55,13 @@ int move_to_end(node_t **list, void *num)
     }
 
     node_t *cur = *list;
-    for (;cur->next != NULL; cur = cur->next);
+    for (; cur->next != NULL; cur = cur->next);
     cur->next = temp;
 
     return EXIT_SUCCESS;
 }
 
-int fill_list(char *fname, node_t **list)
+int fill_list(char *fname, node_t **list, array_t *arr)
 {
     int rc;
 
@@ -87,7 +71,7 @@ int fill_list(char *fname, node_t **list)
         return rc;
 
     int len;
-    if (fscanf(file, "%d", &len) != EXPECTED_INPUT || len < 0)
+    if (fscanf(file, "%d", &len) != EXPECTED_INPUT || len <= 1)
     {
         ERROR_LOG("WRONG_DATA");
 
@@ -97,8 +81,10 @@ int fill_list(char *fname, node_t **list)
 
         return WRONG_DATA;
     }
+    arr->data = calloc(len * sizeof(int), sizeof(int));
+    arr->len = len;
 
-    for (int i = 0; i < len; i++)
+    for (int i = 0; i < arr->len; i++)
     {
         int num;
         if (fscanf(file, "%d", &num) != EXPECTED_INPUT)
@@ -111,14 +97,19 @@ int fill_list(char *fname, node_t **list)
 
             return WRONG_DATA;
         }
-        printf("> %d \n", num);
-        node_t *temp = create_node(&num);//(void*)&num);
-        (*list) = add_node(list, temp);
+        arr->data[i] = num;
     }
 
     rc = file_close(&file);
     if (rc != EXIT_SUCCESS)
         return rc;
+
+    for (int i = 0; i < arr->len; i++)
+    {
+        rc = move_to_end(list, &arr->data[i]);
+        if (rc != EXIT_SUCCESS)
+            return rc;
+    }
 
     return EXIT_SUCCESS;
 }
@@ -243,7 +234,7 @@ node_t *sort_list(node_t **list, int (*comparator)(const void *, const void *))
     }
 
     node_t *new_head = NULL;
-    for (node_t *temp; *list != NULL; )
+    for (node_t *temp; *list != NULL;)
     {
         temp = (*list)->next;
         sorted_insert(&new_head, *list, comparator);

@@ -3,14 +3,13 @@
 
 #include <check.h>
 
-#include "../inc/defines.h"
-#include "../inc/files.h"
+#include "../inc/output.h"
 #include "../inc/list.h"
 #include "../inc/process.h"
 
 int compare_lists(node_t **first, node_t **second);
 
-Suite *get_files_suite(void);
+Suite *get_output_suite(void);
 Suite *get_list_suite(void);
 Suite *get_process_suite(void);
 

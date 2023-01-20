@@ -1,6 +1,4 @@
 #include "../inc/output.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int fwrite_list(char *fname, node_t **list)
 {
@@ -14,8 +12,9 @@ int fwrite_list(char *fname, node_t **list)
     if (rc != EXIT_SUCCESS)
         return rc;
 
-    for (; *list != NULL; *list = (*list)->next)
-        fprintf(file, "%d\n", *(int*)(*list)->data);
+    node_t *temp = *list;
+    for (; temp != NULL; temp = temp->next)
+        fprintf(file, "%d\n", *(int*)temp->data);
 
     rc = file_close(&file);
     if (rc != EXIT_SUCCESS)
