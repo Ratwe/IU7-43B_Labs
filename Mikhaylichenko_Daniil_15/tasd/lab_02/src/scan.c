@@ -21,7 +21,7 @@ int scan_command(int *command)
 {
     int rc;
 
-    printf("%s", "Введите номер комманды: ");
+    printf("%s", "Введите номер команды: ");
 
     rc = scanf("%d", command);
 
@@ -33,7 +33,7 @@ int scan_command(int *command)
 
     if (*command < MIN_COMMAND || *command > MAX_COMMAND)
     {
-        ERROR_LOG("Введённекоректный номер команды");
+        ERROR_LOG("Введён некоректный номер команды");
         return WRONG_INPUT;
     }
 

@@ -1,0 +1,500 @@
+Hyundai_Elantra Palau 1707732 Barbie_Pink 0 4
+Honda_Civic Vatican_City 1141160 Cyan 0 3
+BMW_M5 Lithuania 1778595 Barbie_Pink 0 4
+Honda_CRV China 1856982 Blue 0 1
+Kia_Ceed Mauritius 826391 Rosewood 0 2
+Ford_Kuga Denmark 1235322 Rosegold 0 3
+Mazda_3 Denmark 1232839 Capri 0 0
+Dacia_Duster Lebanon 1754584 Emerald 0 3
+BMW_M4 Bolivia 1279681 Yellow 0 0
+Hyundai_i40 Cyprus 1020931 Capri 0 3
+Mazda_3 Latvia 756021 Beige 0 2
+Audi_A4 Luxembourg 1571168 Rosewood 0 0
+Dacia_Duster Nigeria 710102 Barbie_Pink 0 0
+Hyundai_i40 Vietnam 1570785 White 0 2
+Audi_Cabriolet Lebanon 1128888 Emerald 0 3
+Kia_Sportage Italy 1130923 Rust 0 2
+Fiat_Freemont Trinidad 856049 Cerise 0 4
+Audi_R8 Lithuania 1311414 Cerise 0 1
+Mazda_CX5 Cameroon 1346518 Sienna 0 1
+Fiat_Freemont CAR 1829657 Champagne 0 3
+Audi_A6 Niger 1048248 Beige 0 4
+Honda_CRV Solomon_Islands 1219506 Rosegold 0 2
+Hyundai_Elantra Singapore 1719849 Auburn 0 0
+Audi_R8 Bangladesh 615279 Ultramarine 0 2
+BMW_M4 Norway 867151 Silver 0 3
+Hyundai_Tucson Oman 1100479 Capri 0 2
+Citroen_Cactus Sao_Tome 549246 Magenta 0 0
+Hyundai_Elantra Saint_Kitts 1541475 Silver 0 4
+Citroen_Nemo Guatemala 1354117 Ruby 0 2
+Audi_Q3 Indonesia 898800 Mauve 0 4
+Hyundai_i20 Bolivia 1265742 Rust 0 3
+Honda_Civic Burundi 1669889 Salmon 0 2
+BMW_X1 Lesotho 1883567 Fuchsia 0 1
+Audi_Q6 Guatemala 1360267 Cerise 0 4
+Audi_A5 Burkina_Faso 1246960 Yellow 0 2
+Fiat_Cronos Ireland 812100 Ultramarine 0 4
+Hyundai_i30 Malta 571877 Yellow 0 0
+Dacia_Sandero Antigua 1967662 Fuchsia 0 1
+BMW_X3 Sudan,_South 1483022 Yellow 0 3
+Lada_Niva Korea,_South 794848 Champagne 0 2
+Audi_A4 Cabo_Verde 1358994 Cerise 0 1
+Dacia_Duster Latvia 1043932 Yellow 0 1
+Opel_Astra Mauritania 837530 coral 0 1
+Ford_Focus Seychelles 1857688 Ultramarine 0 0
+Mazda_6 Azerbaijan 1855998 Amethyst 0 3
+Audi_Q7 Paraguay 741029 Lime 0 3
+Audi_TT Zambia 1877269 Magenta 0 4
+BMW_X1 Bangladesh 912888 Lavender 0 4
+Ford_Fiesta Grenada 502048 Rust 0 3
+Hyundai_Tucson Iceland 1609403 Capri 0 0
+Fiat_Argo Mozambique 728105 Dark_Red 0 2
+Fiat_Cronos Brunei 801842 Capri 0 2
+Audi_Q5 Guyana 1205476 Brown 0 4
+Hyundai_Santa Croatia 1294037 Camel 0 4
+Hyundai_i20 Mali 657229 Green 0 2
+Dacia_Logan Sri_Lanka 625756 Rust 0 3
+Mazda_6 Germany 1083932 Olive 0 0
+Kia_Sorento Sweden 1789078 Emerald 0 2
+Opel_Astra Rwanda 586381 Purple 0 1
+Audi_TT Netherlands 1504299 Red 0 1
+Ford_Fiesta Mexico 1398094 Lime 0 4
+Hyundai_i40 Netherlands 605780 Dark_Red 0 3
+Hyundai_i35 The_Gambia 792125 Apricot 0 1
+Audi_A6 Zimbabwe 1124025 White 0 2
+Hyundai_Tucson Iceland 1053137 Barbie_Pink 0 3
+Honda_Civic Comoros 985650 Ultramarine 0 2
+Ford_Fiesta Antigua 1205491 Purple 0 4
+Hyundai_i40 Kazakhstan 906259 Blue 0 3
+Audi_A6 Sao_Tome 1063829 Capri 0 3
+Audi_Q6 Saint_Lucia 1363491 Peach 0 1
+Ford_Kuga Laos 744203 Emerald 0 3
+Ford_Fiesta Mongolia 1547988 Rosegold 0 4
+Citroen_C4 Botswana 972803 Capri 0 2
+Opel_Astra Australia 1576651 Olive 0 1
+Opel_Astra Philippines 956933 White 0 2
+Fiat_Freemont Vatican_City 636951 Pink 0 1
+Lada_Kalina Malawi 514464 Cadet_blue 0 0
+Fiat_Freemont Jamaica 1820983 Salmon 0 0
+Kia_Ceed Slovakia 1710105 Brown 0 4
+Fiat_Tipo Namibia 1726731 Mauve 0 4
+Kia_Ceed Grenada 705403 Rosewood 0 3
+Fiat_Freemont Kosovo 1791793 Cyan 0 4
+Citroen_Nemo Greece 940755 Champagne 0 2
+Hyundai_i40 Cambodia 1884227 Sienna 0 4
+Audi_Q3 Mali 1327041 Orange 0 2
+Hyundai_i35 Nicaragua 1866566 Aqua 0 0
+Mazda_CX5 Barbados 1258696 Ultramarine 0 0
+BMW_M4 Haiti 1604233 Dark_red 0 0
+Hyundai_i30 Monaco 1949918 Maroon 0 1
+Dacia_Logan Chile 1636044 Maroon 0 4
+BMW_M6 Brunei 657530 Salmon 0 3
+Ford_Mondeo Dominican 1542626 Orange 0 0
+Audi_Q1 Armenia 1061929 Dark_red 0 3
+Dacia_Sandero Ukraine 1162184 Cadet_blue 0 2
+Hyundai_i40 Guinea-Bissau 1539865 Magenta 0 4
+BMW_M5 Luxembourg 778095 Sky_blue 0 4
+Dacia_Logan Sierra_Leone 1832647 Peach 0 4
+Lada_Niva Germany 766382 Dark_red 0 4
+Fiat_Freemont Albania 662277 Aqua 0 3
+Hyundai_i35 Barbados 520740 White 0 1
+Opel_Insignia Kyrgyzstan 1076766 Ruby 0 0
+Opel_Insignia Slovakia 1203201 Apricot 0 1
+Kia_Sorento Vietnam 700943 Aquamarine 0 1
+Dacia_Duster Guinea 1759884 Olive 0 4
+Audi_Q7 Australia 1044589 White 0 0
+Hyundai_Santa Taiwan 1821696 Cadet_blue 0 1
+Ford_Kuga Tunisia 1110220 Fuchsia 0 4
+Kia_Ceed Bhutan 1111976 Dark_red 0 1
+Audi_TT El_Salvador 1314100 Dark_Red 0 1
+Hyundai_Tucson Morocco 1571167 coral 0 3
+Hyundai_Santa Haiti 948838 Sienna 0 1
+Ford_Fiesta Congo 1918351 Barbie_Pink 0 3
+Mazda_CX5 Liechtenstein 1807824 Camel 0 1
+Hyundai_i35 Qatar 1839545 Turquoise 0 0
+Audi_V8 Micronesia 934426 Champagne 0 4
+Hyundai_i30 Algeria 1178010 Dark_Red 0 1
+Ford_Kuga Chile 1471333 Aqua 0 0
+Ford_Mustang Brunei 734174 Gray 0 3
+Mazda_CX3 Costa_Rica 1881726 Lavender 0 0
+Hyundai_Elantra Lebanon 1102461 Rosewood 0 2
+Audi_A6 Japan 973085 Aqua 0 3
+BMW_M4 Morocco 800043 coral 0 0
+Honda_CRV Croatia 1343862 Barbie_Pink 0 1
+Audi_Cabriolet Malaysia 994309 coral 0 1
+Audi_Cabriolet Colombia 630701 Blue 0 2
+Audi_Q1 Slovenia 1372343 Silver 0 3
+Citroen_C4 Cabo_Verde 1107446 Salmon 0 2
+Citroen_Cactus Congo 949530 Dark_red 0 3
+Citroen_Nemo Somalia 1629037 Cyan 0 4
+Opel_Astra Belize 1107384 Beige 0 0
+Hyundai_i20 Grenada 1049755 Champagne 0 4
+BMW_X3 Brunei 1027277 Gray 0 3
+Audi_R8 Belize 564837 Auburn 0 2
+Audi_A6 Switzerland 1405778 Capri 0 4
+Audi_Q7 Qatar 699049 Sepia 0 2
+Audi_A4 Greece 535537 Cerise 0 4
+Fiat_500 Thailand 1023513 Salmon 0 4
+Opel_Astra Belgium 1787236 Brown 0 3
+Hyundai_Santa Cyprus 1459548 Gray 0 0
+Citroen_C3 Azerbaijan 608511 coral 0 2
+Kia_Sorento Nepal 1816158 Barbie_Pink 0 1
+Mazda_3 Luxembourg 1724010 Carmine 0 4
+Audi_A8 Lebanon 1745095 Gold 0 0
+BMW_X1 Greece 1817627 Green 0 1
+Ford_Focus Lesotho 1731342 Fuchsia 0 2
+Kia_Sorento Zambia 515465 Mauve 0 2
+Dacia_Sandero Myanmar 1935115 coral 0 2
+Mazda_CX5 Dominica 1925454 Gold 0 1
+Fiat_500 Sierra_Leone 1994625 Camel 0 0
+Hyundai_i20 Liechtenstein 1830813 Sky_blue 0 1
+Hyundai_Tucson Zambia 1461196 Black 0 4
+Opel_Insignia Ecuador 570050 Blue 0 3
+BMW_M4 Iran 1160640 Salmon 0 1
+Mazda_CX3 Australia 1326866 White 0 0
+BMW_X3 Saint_Lucia 862622 Barbie_Pink 0 1
+Ford_Kuga Solomon_Islands 1161309 Lime 0 2
+BMW_X5 Panama 845020 Ultramarine 0 2
+Audi_A4 Saint_Lucia 840141 Rosewood 0 4
+Honda_CRV Argentina 1842874 Lime 0 3
+Lada_Kalina Bahrain 1858952 Capri 0 2
+Ford_Kuga Micronesia 821821 Dark_red 0 0
+Lada_Niva Kazakhstan 1375205 Barbie_Pink 0 4
+Audi_A5 Morocco 1291567 Ultramarine 0 4
+Audi_Cabriolet Angola 682970 Black 0 4
+Mazda_CX3 Bahrain 842477 Champagne 0 4
+Mazda_3 Bhutan 1777824 Dark_Red 0 2
+BMW_M6 Trinidad 693168 Azure 0 0
+BMW_M3 Cambodia 1588841 Cyan 0 0
+Audi_A4 Bolivia 1541676 Yellow 0 2
+Ford_Fiesta United_Kingdom 1971800 Cerise 0 3
+BMW_X5 Gabon 1680640 Gold 0 0
+Dacia_Logan Burundi 1572457 Beige 0 4
+Hyundai_Santa Peru 1173979 Beige 0 1
+Honda_Civic Romania 1175775 Carmine 0 0
+Ford_Mustang Nauru 1733836 Salmon 0 1
+Citroen_Cactus Grenada 1891578 Green 0 0
+BMW_M3 Burkina_Faso 1592702 Apricot 0 0
+Mazda_CX3 Argentina 1669780 Mauve 0 3
+Dacia_Logan Kyrgyzstan 1049264 Rosegold 0 0
+Kia_Sportage Philippines 861061 Champagne 0 2
+BMW_M3 Costa_Rica 632183 Cadet_blue 0 0
+Opel_Insignia Trinidad 1187327 Red 0 1
+Hyundai_Tucson Kazakhstan 916896 Sienna 0 0
+Mazda_CX3 Kyrgyzstan 1386842 Silver 0 4
+BMW_X5 Ethiopia 1419915 Auburn 0 3
+Audi_R8 Sudan,_South 977436 Maroon 0 2
+BMW_X6 Mozambique 1841379 Sepia 0 3
+Fiat_Panda Ghana 1758678 Azure 0 3
+Mazda_CX5 El_Salvador 1671262 Aqua 0 4
+Hyundai_Santa Korea,_North 834679 Sienna 0 2
+Fiat_Argo Italy 937106 Mauve 0 4
+Fiat_Freemont Oman 1113357 Rust 0 0
+Opel_Astra Kosovo 1427268 Rust 0 3
+Audi_Q1 Sudan,_South 1519909 Yellow 0 0
+Fiat_Freemont Ethiopia 1038543 Cerise 0 4
+BMW_M4 Estonia 719180 Cerise 0 3
+Citroen_C3 Tunisia 1166491 Camel 0 4
+Ford_Mustang Venezuela 1785724 Sepia 0 3
+Mazda_CX3 Syria 1334313 Sky_blue 0 4
+Hyundai_Elantra Papua_New_Guinea 1088725 Carmine 0 2
+Citroen_Nemo Rwanda 1587332 Apricot 0 1
+Mazda_CX5 Kiribati 972629 Brown 0 1
+Fiat_500 Malawi 1171064 Rosegold 0 3
+Ford_Mustang Guinea-Bissau 564470 Magenta 0 2
+Fiat_Panda Uruguay 1353563 Turquoise 0 4
+BMW_M6 Nigeria 1429260 Brown 0 3
+Audi_A4 Poland 1030179 Apricot 0 4
+Ford_Fiesta Jamaica 1292246 Blue 0 1
+BMW_X3 Switzerland 1647882 Sky_blue 0 3
+Audi_Q5 Moldova 1251304 Carmine 0 0
+Mazda_6 Finland 1021209 Cadet_blue 0 0
+Ford_Kuga Chile 1539094 Sepia 0 0
+Fiat_Argo Zambia 1014884 Ultramarine 0 3
+Dacia_Logan Kuwait 829217 Cerise 0 2
+Audi_A5 Costa_Rica 980503 Purple 0 2
+BMW_M6 The_Gambia 1220708 Sienna 0 0
+Citroen_Cactus Latvia 1266951 Lavender 0 0
+BMW_X3 Niger 1473307 Auburn 0 1
+Audi_Q5 Korea,_South 1553958 Mauve 0 1
+Ford_Focus Tuvalu 638249 Camel 0 0
+Ford_Focus Mexico 1369802 Red 0 2
+BMW_X3 Cabo_Verde 1882239 Sienna 0 1
+Fiat_500 Lebanon 913646 Cyan 0 4
+Audi_Q7 Korea,_South 1190242 Ultramarine 0 1
+Mazda_6 Sudan 1808622 Red 0 2
+Audi_Q1 Lebanon 1186147 Maroon 0 4
+Fiat_Tipo Congo 900709 Orange 0 4
+BMW_M5 Maldives 1665781 Salmon 0 2
+Audi_R8 Uganda 1317147 Orange 0 0
+Citroen_C4 Malaysia 861130 Red 0 0
+Citroen_Nemo Iraq 1638921 Cadet_blue 0 4
+BMW_X5 Kiribati 743283 Black 0 2
+Citroen_Cactus Belize 587077 Capri 0 1
+Hyundai_Tucson Yemen 1768303 Lavender 0 2
+Ford_Focus Greece 1235444 Black 0 3
+Mazda_6 Yemen 1656668 Turquoise 0 4
+BMW_M6 Peru 1794213 Camel 0 3
+BMW_M3 Gabon 1132949 Beige 0 3
+BMW_X6 Montenegro 1931633 Purple 0 0
+Ford_Mustang Azerbaijan 501980 Carmine 0 2
+BMW_M3 Senegal 949428 Emerald 0 0
+Lada_Kalina Trinidad 1794310 Ultramarine 0 0
+Hyundai_i40 Panama 1717006 Azure 0 3
+Fiat_Cronos Kiribati 644692 Rust 0 1
+Kia_Sorento Saint_Lucia 1457033 Magenta 0 2
+Audi_Cabriolet Venezuela 673798 Lavender 0 4
+Audi_Q5 Bulgaria 679169 Cerise 0 1
+Audi_Q7 Nicaragua 503114 Camel 0 0
+Mazda_CX3 Bosnia 815845 Salmon 0 3
+Citroen_C3 Comoros 1052555 Beige 0 3
+BMW_M5 Cambodia 936205 White 1 2020 47962 3 3
+Hyundai_i20 Malaysia 1011198 Dark_red 1 2020 46785 3 3
+Citroen_Nemo Tunisia 1680411 Pink 1 2016 50778 3 3
+Audi_R8 Zimbabwe 933464 Blue 1 2017 45163 3 3
+Fiat_Argo Saint_Vincent 1914530 Green 1 2014 50330 3 1
+Mazda_6 Yemen 1479046 Gold 1 2020 54099 2 1
+Opel_Insignia Cabo_Verde 1917050 White 1 2013 33580 3 2
+Audi_V8 Germany 1030626 Apricot 1 2017 33527 0 3
+Audi_Q1 Botswana 1862997 Rosewood 1 2020 40533 0 2
+Fiat_500 Romania 776136 Black 1 2015 45826 2 3
+Fiat_Freemont Paraguay 1136929 Green 1 2018 30900 0 2
+Opel_Insignia Saint_Kitts 718590 Barbie_Pink 1 2018 37471 3 2
+Opel_Astra Ghana 1793788 Beige 1 2015 31158 3 2
+Lada_Niva Burundi 1954999 Champagne 1 2014 30073 0 1
+Opel_Astra South_Africa 1832929 Peach 1 2007 38532 1 3
+Lada_Niva Ecuador 1668771 Lavender 1 2011 32921 1 3
+Audi_Cabriolet Moldova 1673893 Mauve 1 2010 39355 2 3
+Audi_V8 United_Kingdom 954583 Amethyst 1 2009 43128 0 2
+Audi_Q3 Albania 1349415 Rosegold 1 2015 48959 2 2
+Audi_Q3 Bahrain 1039260 Amethyst 1 2013 47170 0 1
+Hyundai_Tucson Papua_New_Guinea 860980 Amethyst 1 2012 38793 2 1
+Hyundai_i30 Peru 1247619 Cadet_blue 1 2020 30649 1 1
+Fiat_Panda Italy 925679 Ultramarine 1 2015 47791 2 3
+Fiat_Argo Saudi_Arabia 1622838 Olive 1 2017 53735 3 2
+Audi_A8 Bosnia 1256008 Peach 1 2020 43129 0 3
+BMW_X6 Guinea 782009 Salmon 1 2006 38915 1 3
+Audi_A6 Sudan 1173342 Sky_blue 1 2005 50272 3 2
+Audi_Q5 Libya 1840212 Rosegold 1 2018 40407 3 1
+Hyundai_i20 Zimbabwe 1801033 Blue 1 2018 48534 2 2
+Hyundai_i40 Cuba 1314178 Magenta 1 2013 53573 3 2
+BMW_X6 Chad 866098 coral 1 2012 38794 0 2
+BMW_X1 Tuvalu 1440222 Cerise 1 2015 49531 2 1
+Opel_Insignia Poland 1760580 Lime 1 2009 42644 1 3
+Audi_A5 Brazil 1086309 Cerise 1 2015 36498 1 2
+Dacia_Sandero Andorra 1982896 Green 1 2012 41667 2 1
+Audi_Q6 Maldives 609527 Purple 1 2016 40051 3 1
+Honda_CRV Comoros 1565773 Fuchsia 1 2020 44618 1 2
+Audi_Q1 Philippines 1421571 Beige 1 2015 37766 2 2
+Honda_Civic Chad 1588584 Salmon 1 2006 30940 2 1
+Kia_Sorento Antigua 1868831 Champagne 1 2017 41115 2 3
+Kia_Soul Algeria 775792 Silver 1 2015 32449 1 1
+Ford_Kuga Mali 547993 Green 1 2007 35503 1 2
+Hyundai_i35 Ecuador 1046448 Sky_blue 1 2010 49111 3 1
+Fiat_Argo Suriname 1515028 Dark_red 1 2014 51202 2 2
+Mazda_CX3 Saudi_Arabia 1575114 Silver 1 2015 31356 1 3
+Fiat_Cronos Liechtenstein 1376160 Auburn 1 2016 39548 3 1
+Fiat_Argo India 723597 Ruby 1 2005 43873 2 1
+Audi_Q5 Niger 1039487 Capri 1 2019 44225 3 1
+Mazda_3 Haiti 589951 Rosegold 1 2013 45577 2 2
+Hyundai_Tucson Guinea 1828393 Beige 1 2014 39439 1 2
+Fiat_Argo Comoros 1710093 Champagne 1 2015 42677 2 2
+Dacia_Duster Portugal 1723316 Dark_Red 1 2013 42759 2 2
+Audi_A8 Japan 1264366 Magenta 1 2015 45604 0 3
+Opel_Astra Trinidad 1041408 Mauve 1 2007 36563 0 2
+Dacia_Duster Sri_Lanka 1927457 Emerald 1 2018 51836 0 3
+Ford_Kuga Ethiopia 1270022 Blue 1 2017 30906 0 2
+Honda_Civic Ireland 950558 Azure 1 2012 47001 0 1
+Kia_Sportage Kazakhstan 1397493 Gold 1 2005 33819 0 2
+Hyundai_i30 Poland 1315436 Magenta 1 2020 48317 0 1
+Fiat_Argo Mauritania 1919855 Lime 1 2018 42716 0 1
+Dacia_Sandero San_Marino 1961734 Capri 1 2020 45577 2 2
+Mazda_CX3 Qatar 1162162 Aquamarine 1 2010 32508 1 2
+BMW_X6 Spain 577372 Lavender 1 2005 38281 0 1
+BMW_M5 Gabon 1742888 Auburn 1 2009 48510 0 3
+Hyundai_i20 Bosnia 1937370 Sky_blue 1 2007 37339 1 1
+Mazda_3 Denmark 1609746 Lime 1 2009 37405 1 2
+Opel_Astra Ghana 1740867 Yellow 1 2013 46038 1 3
+Hyundai_Elantra Israel 1710346 Azure 1 2007 41202 1 2
+Citroen_Cactus Iran 1211315 Purple 1 2005 53853 2 1
+Hyundai_i30 Sudan,_South 746647 Apricot 1 2016 46053 1 1
+Audi_A5 Nauru 1941415 Aquamarine 1 2016 36251 1 3
+Opel_Astra The_Bahamas 900551 Lime 1 2006 53670 2 3
+Citroen_Jumper Liechtenstein 1543957 Dark_red 1 2013 36261 0 2
+Mazda_6 United_Kingdom 665397 Peach 1 2008 50386 1 3
+Audi_Q5 Maldives 1371834 Mauve 1 2014 34571 2 1
+Audi_Q1 East_Timor 1300998 Peach 1 2017 51885 1 1
+Fiat_Tipo Zimbabwe 1609128 Aquamarine 1 2019 31640 1 1
+Honda_CRV Saint_Kitts 555788 Cyan 1 2017 39827 2 2
+Kia_Sportage Tuvalu 1620359 Ultramarine 1 2009 40973 1 1
+Dacia_Sandero Hungary 1581050 Lavender 1 2005 33629 0 1
+Audi_R8 Monaco 1897502 Rosegold 1 2007 40833 1 2
+Audi_A6 East_Timor 748478 Auburn 1 2005 34327 2 1
+Lada_Niva Eritrea 1418617 Emerald 1 2020 49416 3 3
+Fiat_Argo Burundi 531665 Fuchsia 1 2014 45920 1 2
+Audi_V8 Luxembourg 1512711 Lime 1 2007 50630 1 1
+Audi_Cabriolet Pakistan 1982614 Dark_Red 1 2014 53983 3 3
+BMW_X3 Tunisia 1912156 Fuchsia 1 2016 37863 3 1
+Kia_Ceed India 621746 Amethyst 1 2008 40471 2 3
+Ford_Fiesta Finland 1758267 Aquamarine 1 2014 46019 3 2
+Hyundai_Elantra Japan 758948 Emerald 1 2006 52700 0 3
+Hyundai_i20 Lebanon 1492711 Camel 1 2015 31525 1 2
+BMW_M6 Mongolia 819277 Auburn 1 2015 45013 2 1
+BMW_X5 Saudi_Arabia 1864236 Blue 1 2006 32673 1 1
+BMW_M2 Venezuela 510494 Fuchsia 1 2005 38101 3 3
+Mazda_CX3 Papua_New_Guinea 1164761 Turquoise 1 2008 36307 1 2
+Citroen_C3 Georgia 1203359 Cadet_blue 1 2012 30658 0 1
+Dacia_Logan Pakistan 955691 Amethyst 1 2018 40560 0 1
+Lada_Niva Morocco 1562686 Rosewood 1 2013 49695 1 1
+Fiat_Tipo Portugal 1548097 Champagne 1 2019 45360 2 2
+Kia_Sorento Myanmar 823996 Apricot 1 2014 54544 1 2
+Hyundai_i30 Belarus 1474695 Magenta 1 2009 52835 3 1
+Audi_Q7 Morocco 1508889 Yellow 1 2013 40140 1 2
+Mazda_CX3 Ecuador 875311 Cerise 1 2007 40639 2 3
+Honda_Civic Kenya 876480 Ultramarine 1 2006 32577 0 2
+Citroen_C3 Kuwait 1918862 Aquamarine 1 2007 48165 3 2
+Honda_CRV Estonia 1543955 Gold 1 2013 35811 2 3
+Citroen_Jumper Chile 1698553 Cadet_blue 1 2006 43794 3 1
+Audi_Cabriolet Lebanon 502967 Amethyst 1 2013 31375 3 2
+Citroen_C3 Austria 1387966 Peach 1 2006 47001 2 3
+Dacia_Logan Russia 1560872 Dark_Red 1 2014 33506 3 1
+Mazda_3 Moldova 1675856 Barbie_Pink 1 2020 32437 3 1
+Kia_Ceed CAR 1991797 Carmine 1 2007 33360 3 3
+Dacia_Duster Egypt 1314693 Dark_Red 1 2012 37549 2 2
+Dacia_Duster Montenegro 1675819 Emerald 1 2019 41933 1 1
+Kia_Soul Tanzania 1997407 Magenta 1 2018 52888 0 2
+Lada_Kalina Denmark 1777371 Amethyst 1 2006 50152 3 3
+Hyundai_i40 Norway 638033 Black 1 2010 45200 2 2
+Ford_Fiesta Sri_Lanka 1587956 Aqua 1 2009 32089 1 1
+Audi_Q7 Finland 682228 Champagne 1 2014 53395 1 3
+Hyundai_i40 Libya 1551563 Rosegold 1 2015 31807 3 2
+Audi_R8 Vatican_City 560061 Gold 1 2009 38890 2 1
+Hyundai_Elantra Uzbekistan 657538 Sky_blue 1 2006 50958 0 1
+Honda_CRV Mozambique 862045 coral 1 2005 45571 0 3
+Hyundai_Santa Sudan,_South 1098635 Peach 1 2016 52880 0 1
+BMW_M4 Singapore 1557619 Rust 1 2009 40331 0 3
+Fiat_Tipo Mali 983880 Magenta 1 2014 45750 1 1
+Dacia_Sandero China 1994657 Fuchsia 1 2019 38291 2 3
+Lada_Kalina Brazil 1562338 Salmon 1 2010 53020 2 3
+Mazda_CX3 Togo 1250357 Beige 1 2009 36766 0 1
+Citroen_Cactus Guinea 1717360 Dark_red 1 2015 43575 3 2
+Fiat_Cronos Chile 628273 Mauve 1 2017 41391 2 2
+Ford_Mondeo San_Marino 814326 Yellow 1 2008 46427 1 2
+Audi_Q3 Switzerland 1113862 Auburn 1 2005 47399 2 2
+Dacia_Logan Denmark 997916 Silver 1 2018 48148 3 2
+BMW_X5 Belize 957854 Sepia 1 2012 52885 0 3
+Dacia_Logan Laos 1194234 Sky_blue 1 2007 33602 3 3
+Audi_A4 Croatia 1202193 Peach 1 2017 40375 1 2
+Dacia_Logan Norway 1091085 Lavender 1 2020 49235 3 3
+Fiat_500 Qatar 1407983 Yellow 1 2013 36415 2 1
+Fiat_Freemont Myanmar 1737410 Rosewood 1 2020 34179 1 2
+Audi_Q1 Sierra_Leone 1165019 Cadet_blue 1 2006 50419 3 1
+Dacia_Duster Brunei 1108849 Apricot 1 2010 39022 3 3
+Dacia_Sandero Congo 1357224 Yellow 1 2011 47665 2 1
+Hyundai_Santa Libya 659792 Green 1 2016 44230 3 1
+Mazda_CX3 Poland 1463688 White 1 2019 38254 3 1
+Audi_Q3 Armenia 1407898 coral 1 2020 31567 0 1
+Lada_Kalina India 1966511 Cyan 1 2017 30672 0 1
+Dacia_Sandero Syria 1232042 Champagne 1 2005 37745 0 1
+Opel_Astra The_Bahamas 700813 Gold 1 2019 39706 0 1
+Citroen_C3 Suriname 1941572 Pink 1 2006 42799 3 3
+Audi_A5 Korea,_South 1866270 Barbie_Pink 1 2007 50213 0 3
+BMW_X3 Vietnam 1137692 Amethyst 1 2017 48471 3 2
+Dacia_Sandero CAR 1137361 Silver 1 2017 46279 2 3
+Fiat_Cronos Monaco 1400070 Salmon 1 2007 37501 1 3
+Fiat_Panda Myanmar 550807 Fuchsia 1 2010 54864 3 3
+Honda_CRV Saint_Lucia 733881 Azure 1 2014 44426 1 2
+Fiat_Panda Nicaragua 1463787 Pink 1 2019 41435 2 1
+Mazda_CX3 Saint_Vincent 1793893 Red 1 2019 31521 1 2
+Hyundai_i40 Georgia 955060 Silver 1 2017 49634 3 3
+BMW_X3 Sao_Tome 1325352 Cyan 1 2016 44099 3 1
+BMW_X6 Chile 832159 Ultramarine 1 2007 31783 2 3
+Audi_A8 Papua_New_Guinea 1385627 Orange 1 2020 34793 0 1
+Fiat_Panda Montenegro 1905699 Barbie_Pink 1 2009 34586 3 2
+Mazda_6 Korea,_South 1006511 Pink 1 2009 46537 3 1
+Fiat_Cronos Armenia 1320867 Ultramarine 1 2011 31989 2 2
+Fiat_Cronos Iraq 1848686 Amethyst 1 2016 40087 0 3
+Fiat_Panda Nigeria 1765419 Yellow 1 2014 42960 1 2
+Dacia_Duster Bahrain 1695574 Maroon 1 2007 48768 0 3
+Kia_Sorento Albania 910927 White 1 2016 50075 0 2
+Audi_Q7 Andorra 1168263 Lime 1 2011 43669 1 3
+Dacia_Duster Chile 1169059 Yellow 1 2015 30417 2 2
+Hyundai_i20 Uganda 1558929 Olive 1 2017 30370 2 1
+Kia_Ceed Peru 1217271 Azure 1 2019 53786 3 1
+BMW_M2 Malaysia 923107 Cerise 1 2008 40700 1 3
+Opel_Astra Togo 1396583 Lime 1 2006 31084 0 1
+Audi_Cabriolet Bahrain 1036888 Gold 1 2006 39497 0 2
+Audi_A4 Colombia 556889 White 1 2018 42927 0 3
+BMW_M3 Romania 607682 Capri 1 2012 53865 3 3
+Kia_Ceed Togo 874246 Green 1 2005 47259 0 3
+Kia_Sorento Korea,_South 738051 Turquoise 1 2015 46701 0 1
+Hyundai_Santa Zambia 1780630 Auburn 1 2012 32961 2 3
+Audi_A8 Papua_New_Guinea 1503349 Gray 1 2018 38261 3 1
+Fiat_Panda Denmark 687829 Cyan 1 2020 32549 2 3
+Kia_Sorento Chile 963561 Salmon 1 2007 38044 0 1
+BMW_M2 Barbados 1624864 Dark_red 1 2011 34308 2 2
+Ford_Mondeo UAE 1403312 Maroon 1 2005 40876 1 2
+Dacia_Logan Samoa 1769983 Rust 1 2010 46156 1 2
+Hyundai_Tucson Finland 1509567 Apricot 1 2013 50092 1 1
+Hyundai_i40 Cyprus 1285956 Dark_Red 1 2009 41507 0 3
+BMW_M4 Papua_New_Guinea 1014005 Red 1 2012 48904 1 2
+Fiat_500 The_Gambia 584970 Salmon 1 2020 53602 2 3
+BMW_X5 The_Bahamas 950616 Silver 1 2011 50881 3 3
+Ford_Focus Angola 1906990 White 1 2014 42880 1 3
+Audi_A8 Iraq 1662227 Orange 1 2009 34707 2 2
+Citroen_Jumper Bosnia 1020748 White 1 2008 41978 2 2
+Citroen_Nemo Maldives 1954485 Gray 1 2005 45247 3 1
+Ford_Fiesta Lebanon 1470704 Emerald 1 2016 32802 3 2
+Audi_A5 Belgium 1655419 Cyan 1 2019 32017 2 3
+Hyundai_i40 Romania 1345820 Sepia 1 2017 33627 3 1
+Audi_Q6 San_Marino 1805447 Auburn 1 2019 36666 3 3
+Mazda_3 Nauru 853981 Magenta 1 2020 51448 1 3
+Mazda_3 Tunisia 896644 Peach 1 2016 34470 0 2
+Fiat_Argo Sudan,_South 1383510 Barbie_Pink 1 2019 39747 0 2
+Hyundai_i35 Benin 532945 Purple 1 2006 53686 1 3
+Ford_Kuga Grenada 1773730 Lime 1 2015 50643 1 2
+Audi_A5 Mozambique 1120618 Pink 1 2012 36844 3 1
+BMW_M3 Saint_Lucia 1167914 Blue 1 2008 39737 1 1
+Audi_R8 Mozambique 1624443 Turquoise 1 2012 50325 2 1
+Mazda_6 Kenya 1734761 Yellow 1 2018 41340 1 2
+Fiat_Cronos Burundi 1567700 Apricot 1 2019 30495 2 2
+Hyundai_i40 Honduras 1411692 Magenta 1 2012 42388 3 2
+Mazda_3 Austria 1538609 Beige 1 2005 35953 2 1
+Ford_Mustang Slovakia 1760037 Sky_blue 1 2019 50050 0 1
+Citroen_C3 Sudan 790089 Dark_red 1 2013 53584 1 1
+Audi_V8 Micronesia 1398425 Blue 1 2007 35676 3 2
+Honda_CRV Canada 573968 Rosegold 1 2006 53245 3 1
+Hyundai_i20 Mali 1086741 Dark_Red 1 2020 41986 0 2
+Citroen_C3 Kiribati 1615684 Azure 1 2020 47376 2 2
+Ford_Fiesta Mauritania 1926180 Dark_Red 1 2007 41658 0 1
+Audi_R8 Burkina_Faso 708036 Aqua 1 2011 39131 1 2
+Mazda_CX5 Syria 939871 Lime 1 2011 47514 3 3
+Mazda_3 Bangladesh 754420 Peach 1 2016 47545 2 3
+BMW_M6 Somalia 1290453 Sienna 1 2017 53145 2 2
+Fiat_Panda Germany 506275 Cerise 1 2016 43885 3 2
+BMW_X6 Samoa 615612 Amethyst 1 2014 36495 3 2
+Audi_Q6 Swaziland 1554752 Emerald 1 2010 43631 0 1
+Mazda_CX5 Philippines 1590620 White 1 2010 30994 1 2
+Ford_Focus Germany 1671015 Emerald 1 2008 31681 2 3
+Audi_Q7 France 1979649 Yellow 1 2012 36043 0 2
+Audi_V8 Ukraine 1917985 Gold 1 2015 41204 2 1
+Mazda_CX5 Madagascar 648546 Auburn 1 2014 32785 1 2
+Citroen_C4 Taiwan 1090693 Capri 1 2017 45739 3 2
+Fiat_Panda Monaco 1466772 Sienna 1 2015 48071 1 2
+Audi_TT Oman 1286224 Pink 1 2018 32672 0 1
+Kia_Soul El_Salvador 712678 Salmon 1 2014 31060 2 2
+BMW_M6 Guinea 1246942 Azure 1 2005 34127 0 3
+Hyundai_i40 Cameroon 891945 Aquamarine 1 2007 31935 2 1
+Fiat_Freemont South_Africa 1223721 Apricot 1 2008 48996 3 3
+Lada_Niva Moldova 653838 Cyan 1 2017 31817 2 1
+BMW_X1 Bhutan 807552 coral 1 2018 33789 2 2
+Audi_Q7 Canada 1998836 Brown 1 2008 40689 0 3
+Dacia_Sandero Bolivia 1728735 Black 1 2005 36573 3 1
+Ford_Kuga Kyrgyzstan 1135286 Capri 1 2013 52903 0 1
+Opel_Insignia Slovenia 1435604 Gold 1 2016 47277 3 3
+Audi_Q7 Lesotho 1419191 Barbie_Pink 1 2006 51682 3 3
+Audi_Q5 Finland 1958962 Carmine 1 2007 45541 2 1
+Dacia_Sandero Romania 1716607 coral 1 2009 30335 1 3
+BMW_M5 Tonga 942535 Aqua 1 2011 35120 1 2
+Ford_Kuga Ghana 1756399 Lavender 1 2011 47294 2 1
+Opel_Astra Samoa 762283 coral 1 2018 44054 2 3

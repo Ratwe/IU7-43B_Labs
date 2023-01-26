@@ -113,7 +113,7 @@ int add_record(car_info_t cars_arr[], keys_t keys[], size_t *table_size)
 
     if (new_record.condition_flag == NEW)
     {
-        ENTER("Введите гарантия в годах: ");
+        ENTER("Введите гарантию в годах: ");
         if (scanf("%d", &new_record.condition.new_car.guarantee) != 1 ||
                 new_record.condition.new_car.guarantee <= 0)
         {
@@ -174,7 +174,7 @@ int del_record(car_info_t cars_arr[], keys_t keys[], size_t *table_size)
 {
     if (*table_size == 0)
     {
-        FAILURE("Таблица пуст");
+        FAILURE("    Таблица пуста!");
         return EMPTY_TABLE;
     }
 

@@ -12,8 +12,11 @@
 #define FAILURE(str)        fprintf(stdout, "\033[35m%s\033[0m\n", str)
 #define WORD(str)           fprintf(stdout, "\033[33m%s\033[0m", str)
 
-#define SHORT_DATA_FNAME    "./data/data10.txt"
-#define FULL_DATA_FNAME     "./data/data1000.txt"
+#define SMALL_FNAME         "./data/data10.txt"
+#define MIDDLE_FNAME        "./data/data500.txt"
+#define BIG_FNAME           "./data/data1000.txt"
+#define SORTED_FNAME        "./data/sorted10.txt"
+#define REVERSE_FNAME       "./data/reverse10.txt"
 
 #define MIN_COMMAND         0
 #define MAX_COMMAND         12

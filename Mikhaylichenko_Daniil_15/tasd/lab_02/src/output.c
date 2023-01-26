@@ -21,7 +21,7 @@ void print_table(table_t table)
     int size = table.size;
     if (size == 0)
     {
-        FAILURE("    Таблица пуста");
+        FAILURE("    Таблица пуста!");
         return;
     }
 
@@ -39,7 +39,7 @@ void print_keys(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("Таблица пуста!");
         return;
     }
 
@@ -57,7 +57,7 @@ void print_table_by_keys(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("Таблица пуста!");
         return;
     }
 
@@ -72,7 +72,7 @@ int search_cars(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("Таблица пуста!");
         return EMPTY_TABLE;
     }
 
