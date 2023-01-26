@@ -1,6 +1,4 @@
 #include "../inc/table.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int fill_table(FILE **file, car_info_t cars_arr[], keys_t keys[], size_t *table_size)
 {
@@ -73,7 +71,7 @@ int add_record(car_info_t cars_arr[], keys_t keys[], size_t *table_size)
 {
     if (*table_size == MAX_RECORDS)
     {
-        FAILURE("Таблица уже полность заполнена!");
+        FAILURE("    Таблица уже полность заполнена!");
         return TOO_MANY_RECORDS;
     }
 

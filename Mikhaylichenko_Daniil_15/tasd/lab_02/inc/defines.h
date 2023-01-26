@@ -19,7 +19,7 @@
 #define REVERSE_FNAME       "./data/reverse10.txt"
 
 #define MIN_COMMAND         0
-#define MAX_COMMAND         12
+#define MAX_COMMAND         13
 
 #define MAX_RECORDS         1000
 

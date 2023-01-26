@@ -1,5 +1,4 @@
 #include "../inc/menu.h"
-#include <stdlib.h>
 
 void print_menu()
 {

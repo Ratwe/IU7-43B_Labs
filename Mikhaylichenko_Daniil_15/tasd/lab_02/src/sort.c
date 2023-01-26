@@ -8,7 +8,7 @@ void TableBubbleSort(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("    Таблица пуста!");
         return;
     }
 
@@ -26,7 +26,7 @@ void KeysBubbleSort(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("    Таблица пуста!");
         return;
     }
 
@@ -60,7 +60,7 @@ void TableQsort(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("    Таблица пуста!");
         return;
     }
 
@@ -71,7 +71,7 @@ void KeysQsort(table_t table)
 {
     if (table.size == 0)
     {
-        FAILURE("Таблица пуста");
+        FAILURE("    Таблица пуста!");
         return;
     }
 
