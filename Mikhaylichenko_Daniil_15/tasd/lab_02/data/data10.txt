@@ -1,0 +1,10 @@
+Hyundai_Elantra Palau 1707732 Barbie_Pink 0 4
+Honda_Civic Vatican_City 1141160 Cyan 0 3
+BMW_M5 Lithuania 1778595 Barbie_Pink 0 4
+Honda_CRV China 1856982 Blue 0 1
+Kia_Ceed Mauritius 826391 Rosewood 0 2
+BMW_M5 Cambodia 936205 White 1 2020 47962 3 3
+Hyundai_i20 Malaysia 1011198 Dark_red 1 2020 46785 3 3
+Citroen_Nemo Tunisia 1680411 Pink 1 2016 50778 3 3
+Audi_R8 Zimbabwe 933464 Blue 1 2017 45163 3 3
+Fiat_Argo Saint_Vincent 1914530 Green 1 2014 50330 0 1
