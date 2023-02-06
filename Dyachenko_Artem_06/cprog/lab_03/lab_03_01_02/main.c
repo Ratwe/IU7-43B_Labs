@@ -70,23 +70,12 @@ void print_array(int arr[N * M], size_t n)
 // проверка на чередование
 int check_alternation(int arr[N][M], size_t n, size_t j)
 {
-    #ifdef DEBUG
-    printf("arr[j]: ");
-    for (size_t i = 0; i < n; i++)
-        printf("%d ", arr[i][j]);
-    printf("\n");
-    #endif
-
     if (n == 1)
         return NO_ALTERNATION;
 
     for (size_t i = 1; i < n; i++)
         if ((arr[i - 1][j] >= 0 && arr[i][j] >= 0) || (arr[i - 1][j] < 0 && arr[i][j] < 0))
             return NO_ALTERNATION;
-
-    #ifdef DEBUG
-    printf("YES\n");
-    #endif
 
     return YES_ALTERNATION;
 }
@@ -99,11 +88,6 @@ int main(void)
     int rc = matrix_input(arr, &n, &m);
     if (rc)
         return rc;
-
-    #ifdef DEBUG
-    printf("n: %zu \nm: %zu\n", n, m);
-    print_matrix(arr, n, m);
-    #endif
 
     for (size_t j = 0; j < m; j++)
     {

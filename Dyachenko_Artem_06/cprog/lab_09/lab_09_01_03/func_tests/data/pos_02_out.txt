@@ -1,0 +1,12 @@
+apple
+25
+banana
+10
+orange
+5
+bane
+101
+axe
+1010
+forest
+500

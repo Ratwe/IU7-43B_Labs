@@ -1,6 +1,6 @@
 #!/bin/bash
 
-app="../../app.exe"
+app="./../../app.exe"
 file_input=$1
 file_args=$2
 file_report="report.txt"
@@ -12,13 +12,17 @@ if [[ -f "$file_args" ]]; then
 fi
 
 if [[ -n "$USE_VALGRIND" ]]; then
+    if [[ "$#" -ne 2 ]]; then
+		exit 5
+	fi
+
     valgrind --leak-check=yes --leak-resolution=med --quiet --log-file="report.txt" "$app" "$args" < "$file_input"
     report=$(cat "$file_report")
 
     "$app" "$args" < "$file_input" > "$file_output"
     compared=$?
 
-	if [ "$compared" -eq 1 ]; then
+	if [ "$compared" -ne 0 ]; then
 		if [[ -n $report ]]; then
 			compared=3
 		else
@@ -33,6 +37,10 @@ if [[ -n "$USE_VALGRIND" ]]; then
 	fi
 
 else
+    if [[ "$#" -ne 2 ]]; then
+		exit 1
+	fi
+
     "$app" "$args" < "$file_input" > "$file_output"
     if [[ "$?" -lt 1 ]]; then
 	    compared=1

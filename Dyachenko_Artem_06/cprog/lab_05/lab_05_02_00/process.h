@@ -1,0 +1,8 @@
+#ifndef __PROCESS__H__
+#define __PROCESS__H__
+
+#include <stdio.h>
+
+int process(FILE *f, double *res);
+
+#endif

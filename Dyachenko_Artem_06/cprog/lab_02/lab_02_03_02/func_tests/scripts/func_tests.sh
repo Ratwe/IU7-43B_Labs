@@ -2,12 +2,12 @@
 
 count=0
 
-for file in ../data/*_in.txt; do
+for file in ./../data/*_in.txt; do
 	if [[ "$file" =~ pos_[0-9][0-9]_in\.txt ]]; then
 
 		num=$(echo "$file" | grep -o "[0-9]*")
-		file_output=$(echo | find ../data/ -name "pos_$num\_out\.txt")
-		file_args=$(echo | find ../data/ -name "pos_$num\_args\.txt")
+		file_output=$(echo | find ./../data/ -name "pos_$num\_out\.txt")
+		file_args=$(echo | find ./../data/ -name "pos_$num\_args\.txt")
 
 		# echo "[DB] file:" "$file"
 		# echo "[DB] file_output:" "$file_output"
@@ -37,8 +37,8 @@ for file in ../data/*_in.txt; do
 	elif [[ "$file" =~ neg_[0-9][0-9]_in\.txt ]]; then
 
 		num=$(echo "$file" | grep -o "[0-9]*")
-		file_output=$(echo | find ../data/ -name "neg_$num\_out\.txt")
-		file_args=$(echo | find ../data/ -name "neg_$num\_args\.txt")
+		file_output=$(echo | find ./../data/ -name "neg_$num\_out\.txt")
+		file_args=$(echo | find ./../data/ -name "neg_$num\_args\.txt")
 
 		# echo "[DB] file:" "$file"
 		# echo "[DB] file_output:" "$file_output"
@@ -68,5 +68,5 @@ for file in ../data/*_in.txt; do
 	fi
 done
 
-echo failed tests: $count
+echo Failed tests: $count
 exit $count

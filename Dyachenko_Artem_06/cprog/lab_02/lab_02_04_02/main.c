@@ -60,7 +60,7 @@ void bubble_sort(int *arr, size_t n)
 int main(void)
 {
     // Ввод массива
-    int arr[N];
+    int arr[N + 1];
     size_t n;
     int flag_overflow = 0;
 

@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc -std=c99 -c -Wall -Werror -Wextra -Wpedantic -O0 -g --coverage main.c
-gcc -o app.exe --coverage main.o -lm
+
+gcc -c -std=c99 -Wall -Werror -Wextra -Wpedantic -Wvla -O0 -g --coverage ./*.c
+gcc --coverage ./*.o -o app.exe -lm

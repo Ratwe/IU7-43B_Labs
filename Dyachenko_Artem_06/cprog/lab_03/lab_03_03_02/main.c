@@ -44,7 +44,7 @@ void print_matrix(int arr[N][M], size_t n, size_t m)
 
 int bigger(int arr[N][M], size_t m, size_t a, size_t b)
 {
-    int count_a = 0, count_b = 0;
+    int count_a = 1, count_b = 1;
 
     for (size_t j = 0; j < m; j++)
     {
@@ -53,8 +53,8 @@ int bigger(int arr[N][M], size_t m, size_t a, size_t b)
         printf("arr_b[%zu][%zu] = %d\n\n", b, j, arr[b][j]);
         #endif
 
-        count_a += arr[a][j];
-        count_b += arr[b][j];
+        count_a *= arr[a][j];
+        count_b *= arr[b][j];
     }
 
     #ifdef DEBUG

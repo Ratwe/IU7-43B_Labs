@@ -1,3 +1,5 @@
 #!/bin/bash
 
-rm app.exe main.o main.gcno main.c.gcov app.gcno  func_tests/scripts/report.txt func_tests/scripts/real.txt
+rm -f ./*.exe ./*.o ./*.gcda ./*.c.gcov ./*.gcov ./*.gcno \
+func_tests/scripts/report.txt func_tests/scripts/real.txt \
+func_tests/scripts/.output.txt func_tests/scripts/main.c.gcov 

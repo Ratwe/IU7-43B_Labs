@@ -3,11 +3,11 @@
 file_a=$1
 file_b=$2
 
-string_a=$(echo -v "$(cat "$file_a")" | grep -oE "Result: .*")
-string_b=$(echo -v "$(cat "$file_b")" | grep -oE "Result: .*")
+string_a=$(echo -v "$(cat "$file_a")")
+string_b=$(echo -v "$(cat "$file_b")")
 
 if [[ "$string_a" == "$string_b"  ]]; then
-	echo 0
+	exit 0
 else
-	echo 1
+	exit 1
 fi

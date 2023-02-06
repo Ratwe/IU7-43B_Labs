@@ -1,6 +1,6 @@
 #!/bin/bash
 
-app="../../app.exe"
+app="./../../app.exe"
 file_input=$1
 file_expected=$2
 file_args=$3
@@ -14,16 +14,15 @@ if [[ -f $file_args ]]; then
 fi
 
 if [[ -n "$USE_VALGRIND" ]]; then
-        valgrind --leak-check=yes --leak-resolution=med --quiet --log-file="report.txt" "$app" "$args" < "$file_input" > "$file_real"
+	if [[ "$#" -ne 3 ]]; then
+		exit 5
+	fi
+
+    valgrind --leak-check=yes --leak-resolution=med --quiet --log-file="report.txt" "$app" "$args" < "$file_input" > "$file_real"
 	report=$(cat "$file_report")
 
-	./comparator_num.sh "$file_expected" "$file_real"
+	./comparator.sh "$file_expected" "$file_real"
 	compared=$?
-
-	./comparator_string.sh "$file_expected" "$file_real"
-	if [ "$compared" -gt "$?" ]; then
-		compared=$?
-	fi
 
 	if [ "$compared" -eq 0 ]; then
 		if [[ -n $report ]]; then
@@ -40,15 +39,14 @@ if [[ -n "$USE_VALGRIND" ]]; then
 	fi
 
 else
+	if [[ "$#" -ne 3 ]]; then
+		exit 1
+	fi
+
 	"$app" "$args" < "$file_input" > "$file_real"
 
-	./comparator_num.sh "$file_expected" "$file_real"
+	./comparator.sh "$file_expected" "$file_real"
 	compared=$?
-
-	./comparator_string.sh "$file_expected" "$file_real"
-	if [ "$compared" -gt "$?" ]; then
-		compared=$?
-	fi
 fi
 
 exit "$compared"

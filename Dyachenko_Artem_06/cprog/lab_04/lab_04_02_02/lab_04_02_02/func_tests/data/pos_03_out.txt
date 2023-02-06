@@ -1,0 +1,5 @@
+Result: apple yes
+bane no
+cascade no
+deer yes
+finger no
